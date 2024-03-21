@@ -17,7 +17,8 @@ const AnimatePayload = ({ payload }: Props) => {
           initial={{ opacity: 0 }}
           key={idx}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 0.1 * idx }}
+          transition={{ duration: 0.3, delay: 0.1 * (idx + 1) }}
+          className="mr-1"
         >
           {token}
         </motion.span>

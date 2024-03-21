@@ -36,3 +36,7 @@ body {
 button {
   @apply rounded-md
 }
+
+.animate__width {
+  transition: width 0.3s linear;
+}
