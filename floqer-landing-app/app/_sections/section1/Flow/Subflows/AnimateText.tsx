@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AnimatePayload from "../AnimatePayload";
 
 interface Props {
@@ -6,6 +6,7 @@ interface Props {
 }
 
 const AnimateText = ({ payload }: Props) => {
+  // console.log("animetext loaded")
   return <AnimatePayload payload={payload} />;
 };
 

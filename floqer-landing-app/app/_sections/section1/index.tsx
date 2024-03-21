@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import Navbar from "@/app/_components/Navbar";
-import Flow from "./Flow";
 import FlowTemplate from "./Flow/FlowTemplate";
 import Linkedin from "@/public/assets/SVGs/Linkedin";
 import Apollo from "@/public/assets/SVGs/Apollo";
@@ -16,11 +15,24 @@ import ApolloSvg from "@/public/assets/SVGs/ApolloSVG.svg";
 import Image from "next/image";
 import Star from "@/public/assets/SVGs/Star";
 
-const index = () => {
+const Flow = () => {
+  const [timeIdx, setTimeIdx] = useState(0);
+
+  useEffect(() => {
+    const tm = setTimeout(() => {
+      setTimeIdx((prev) => prev + 1);
+      clearTimeout(tm);
+      setTimeout(() => {
+        setTimeIdx((prev) => prev + 1);
+      }, 2000);
+    }, 2000);
+    return () => clearInterval(tm);
+  }, []);
+
   return (
     <section className="min-h-screen flex flex-col items-center gap-4">
       <Navbar />
-      <section className="flex flex-col md:flex-row items-center p-4 justify-between w-full">
+      <section className="flex flex-col md:flex-row items-center p-12 justify-between w-full">
         <div className="flex flex-col gap-2 items-start w-full md:w-3/5">
           <h1 className="font-bold text-4xl">Not just another sales tool,</h1>
           <h1 className="font-bold text-3xl">All the sales tools</h1>
@@ -42,56 +54,70 @@ const index = () => {
             <FlowTemplate
               Icon={<Linkedin size={"50px"} />}
               payload="Importing your leads..."
+              delay={600}
               SubflowComp={<AnimateText payload="Importing your leads..." />}
+              SecondFlow={<AnimateText payload="Leads are imported..." />}
             />
           </motion.section>
-          <motion.section
-            initial={{ visibility: "hidden", opacity: 0 }}
-            animate={{ visibility: "visible", opacity: 1 }}
-            transition={{
-              duration: 0.1,
-              delay: 0.8,
-            }}
-          >
-            <FlowTemplate
-              Icon={
-                <Image
-                  src={ApolloSvg}
-                  alt="apollo"
-                  className="w-[45px] h-[45px]"
-                />
-              }
-              payload="Lead email found from Apollo.io"
-              SubflowComp={
-                <AnimateSVGs
-                  payload={
-                    [
-                      <Image key={1} src={Redwolf} alt="redwolf" className="w-[50px] h-[50px]" />,
+          {timeIdx > 0 && (
+            <motion.section
+              initial={{ visibility: "hidden", opacity: 0 }}
+              animate={{ visibility: "visible", opacity: 1 }}
+              transition={{
+                duration: 0.1,
+                delay: 0.8,
+              }}
+            >
+              <FlowTemplate
+                Icon={
+                  <Image
+                    src={ApolloSvg}
+                    alt="apollo"
+                    className="w-[45px] h-[45px]"
+                  />
+                }
+                payload="Lead email found from Apollo.io"
+                delay={600}
+                SubflowComp={
+                  <AnimateSVGs
+                    payload={[
+                      <Image
+                        key={1}
+                        src={Redwolf}
+                        alt="redwolf"
+                        className="w-[50px] h-[50px]"
+                      />,
                       <Image src={Rocket} alt="rocket" key={2} />,
-                    ]
-                  }
-                />
-              }
-            />
-          </motion.section>
-          <motion.section
-            initial={{ visibility: "hidden", opacity: 0 }}
-            animate={{ visibility: "visible", opacity: 1 }}
-            transition={{
-              duration: 0.1,
-              delay: 1.2,
-            }}
-          >
-            <FlowTemplate
-              Icon={<Star size={"50px"} />}
-              payload="Generating personalized email for leads..."
-              SubflowComp={<AnimateText payload="Generating personalized email for leads..." />}
-            />
-          </motion.section>
+                    ]}
+                  />
+                }
+                SecondFlow={<AnimateText payload="Lead email found from Apollo.io" />}
+              />
+            </motion.section>
+          )}
+          {timeIdx > 1 && (
+            <motion.section
+              initial={{ display: "none", opacity: 0 }}
+              animate={{ display: "block", opacity: 1 }}
+              transition={{
+                duration: 0.1,
+              }}
+            >
+              <FlowTemplate
+                Icon={<Star size={"50px"} />}
+                delay={600}
+                payload="Generating personalized email for leads..."
+                SubflowComp={
+                  <AnimateText payload="Generating personalized email for leads..." />
+                }
+                SecondFlow={<AnimateText  payload="Sent personalized email to lead" />}
+              />
+            </motion.section>
+          )}
         </section>
       </section>
     </section>
   );
 };
 
-export default index;
+export default Flow;

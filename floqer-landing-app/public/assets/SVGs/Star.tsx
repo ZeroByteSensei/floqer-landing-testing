@@ -9,7 +9,7 @@ const Star = ({ size }: Props) => {
     <svg
       width={size || "68"}
       height={size || "67"}
-      viewBox="0 0 68 67"
+      viewBox="0 0 68 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

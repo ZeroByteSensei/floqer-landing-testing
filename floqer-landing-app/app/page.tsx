@@ -3,7 +3,7 @@ import Section1 from "@/app/_sections/section1"
 
 const page = () => {
   return (
-    <div >
+    <div className='font-primary' >
       <Section1 />
     </div>
   )

@@ -15,6 +15,10 @@ const config: Config = {
       },
       colors: {
         primary: "#523DFF",
+      },
+      fontFamily: {
+        primary: "AirbnbCereal, sans-serif !important",
+        secondary: "Recoleta, sans-serif !important",
       }
     },
   },
