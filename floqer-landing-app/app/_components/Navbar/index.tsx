@@ -9,7 +9,7 @@ import { Button } from "@nextui-org/button";
 
 const index = () => {
   return (
-    <nav className="w-full flex items-center gap-2 p-4 md:p-10 justify-between">
+    <nav className="w-[90%] max-w-[2300px] flex items-center gap-2 p-4 md:py-6 md:px-10 justify-between bg-white shadow-lg rounded-full">
       <section className="flex items-center justify-between w-fit sm:w-1/2 max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
         <AnimateLoad delay={0}>
           <header className="text-4xl font-bold text-primary">floqer</header>
