@@ -17,10 +17,12 @@ const config: Config = {
       },
       colors: {
         primary: "#523DFF",
+        secondary: "#51407D",
+        tertiary: "#E8A496"
       },
       fontFamily: {
         primary: "AirbnbCereal, sans-serif !important",
-        secondary: "Recoleta, sans-serif !important",
+        secondary: "Recoleta, sans-serif !important", 
       }
     },
   },

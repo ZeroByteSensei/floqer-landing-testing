@@ -35,7 +35,7 @@ const FlowTemplate = ({
       clearTimeout(tm);
       setTimeout(() => {
         setShowPl(() => 2);
-      }, 1000);
+      }, 1500);
     }, del + 100);
     return () => clearTimeout(tm);
   }, []);
@@ -48,7 +48,7 @@ const FlowTemplate = ({
       // background: "linear-gradient(to right, #fff, #E1F5FF 100%)"
     }}
     >
-      <SvgTickWrapper delay={1500}>{Icon}</SvgTickWrapper>
+      <SvgTickWrapper delay={2100}>{Icon}</SvgTickWrapper>
       {showPl === 1 && SubflowComp}
       {showPl === 2 && SecondFlow}
     </motion.span>

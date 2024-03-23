@@ -13,7 +13,7 @@ const AnimateSVGs = ({ payload }: Props) => {
           initial={{ opacity: 0, translateY: "-1px" }}
           animate={{ opacity: 1, translateY: 0 }}
           key={idx}
-          transition={{ duration: 0.3, delay: 0.6 * (idx + 1) }}
+          transition={{ duration: 0.6, delay: 0.1 * (idx + 1) }}
           className="mr-1"
         >
           {token}
