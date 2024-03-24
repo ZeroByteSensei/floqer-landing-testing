@@ -75,3 +75,24 @@ button {
 .animate__width {
   transition: width 0.3s linear;
 }
+
+.opened {
+  max-height: 999px !important;
+  transition: all 1s linear !important;
+}
+
+.closed {
+  max-height: 0;
+  padding: 0;
+  /* transition: all 1s linear !important; */
+}
+
+/* .closed {
+  transition: all 1s;
+  max-height: 0;
+}
+
+.opened {
+  transition: all 1s;
+  max-height: 9999px;
+} */

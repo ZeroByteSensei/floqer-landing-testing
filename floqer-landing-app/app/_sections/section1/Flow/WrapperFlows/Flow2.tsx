@@ -72,9 +72,14 @@ const Flow2 = () => {
                     key={1}
                     src={Redwolf}
                     alt="redwolf"
-                    className="w-[50px] h-[50px]"
+                    className="w-[45px] h-[45px]"
                   />,
-                  <Image src={Rocket} alt="rocket" key={2} />,
+                  <Image
+                    src={Rocket}
+                    alt="rocket"
+                    key={2}
+                    className="w-[45px] h-[45px]"
+                  />,
                 ]}
               />
             }

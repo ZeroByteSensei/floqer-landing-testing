@@ -19,12 +19,13 @@ import { Button } from "@nextui-org/button";
 import WrapperFlow from "./Flow/WrapperFlows";
 
 const Flow = () => {
-
   return (
     <NextUIProvider>
-      <section className="min-h-screen flex flex-col items-center gap-24 bg-gradient-to-br from-[#d8dbf9] from-[5%] via-[#ded7fc] via-[30%] via-[#fbebee] via-20% to-[#ffffff] pt-4">
+      <section
+        className="min-h-screen flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative"
+      >
         <Navbar />
-        <section className="flex flex-col md:flex-row items-center md:items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0">
+        <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0">
           <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
             <h1 className="font-light text-6xl text-[#51407D]">
               Not just another sales tool,
@@ -37,12 +38,15 @@ const Flow = () => {
               web scraping, and AI messaging to enrich your data and automate
               your outbound at scale.
             </span>
-            <Button className="rounded-md bg-black text-white">Request a demo</Button>
+            <Button className="rounded-md bg-black text-white">
+              Request a demo
+            </Button>
           </div>
           <section className="flex flex-1 flex-col items-start gap-2">
             <WrapperFlow />
           </section>
         </section>
+        {/* <div className="absolute w-full h-[100px] bottom-[-1rem] " ></div> */}
       </section>
     </NextUIProvider>
   );
