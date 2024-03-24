@@ -3,6 +3,8 @@ import Section1 from "@/app/_sections/section1";
 import { NextUIProvider } from "@nextui-org/system";
 import Section2 from "./_sections/section2";
 import Section3 from "./_sections/section3";
+import Section5 from "./_sections/section5";
+import Footer from "./_sections/footer";
 
 const page = () => {
   return (
@@ -15,6 +17,10 @@ const page = () => {
       </div>
       <Section2 />
       <Section3 />
+      <div className="max-w-[2700px] mx-auto">
+        <Section5 />
+        <Footer />
+      </div>
     </div>
   );
 };

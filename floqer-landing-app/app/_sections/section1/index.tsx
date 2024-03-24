@@ -25,7 +25,7 @@ const Flow = () => {
         className="min-h-screen flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative"
       >
         <Navbar />
-        <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0">
+        <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
           <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
             <h1 className="font-light text-6xl text-[#51407D]">
               Not just another sales tool,
@@ -38,7 +38,7 @@ const Flow = () => {
               web scraping, and AI messaging to enrich your data and automate
               your outbound at scale.
             </span>
-            <Button className="rounded-md bg-black text-white">
+            <Button className=" bg-black text-white">
               Request a demo
             </Button>
           </div>

@@ -1,5 +1,21 @@
 import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme"
+
+import colors from "tailwindcss/colors"
+
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 
 const config: Config = {
   content: [
@@ -27,6 +43,6 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(), addVariablesForColors],
 };
 export default config;
