@@ -96,3 +96,9 @@ button {
   transition: all 1s;
   max-height: 9999px;
 } */
+
+
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

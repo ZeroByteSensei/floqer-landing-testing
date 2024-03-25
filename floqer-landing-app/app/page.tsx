@@ -5,6 +5,7 @@ import Section2 from "./_sections/section2";
 import Section3 from "./_sections/section3";
 import Section5 from "./_sections/section5";
 import Footer from "./_sections/footer";
+import Section4 from "./_sections/section4";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       </div>
       <Section2 />
       <Section3 />
+      <Section4  />
       <div className="max-w-[2700px] mx-auto">
         <Section5 />
         <Footer />

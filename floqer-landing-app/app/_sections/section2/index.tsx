@@ -1,37 +1,23 @@
-"use client";
-
-import { Button } from "@nextui-org/button";
-import { NextUIProvider } from "@nextui-org/system";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import React from "react";
-import Card from "./Card";
+import Quadrant1 from "./Quadrants/Quadrant1";
+import Quadrant2 from "./Quadrants/Quadrant2";
+import Quadrant3 from "./Quadrants/Quadrant3";
+import Quadrant4 from "./Quadrants/Quadrant4";
 
 const Section2 = () => {
   return (
-    <NextUIProvider>
-      <section className="w-full flex flex-col items-center justify-center gap-12">
-        <section className="flex flex-col gap-4 items-center justify-center text-secondary">
-          <h1 className="font-bold text-6xl ">{"You're in good company"}</h1>
-          <p className="text-center">{"You don't have to trust our word"}</p>
-        </section>
-        <section className="w-full flex items-center justify-center gap-8">
-          <Button
-            isIconOnly
-            className="flex items-center justify-center h-fit w-fit bg-white p-4 border rounded-full border-gray-100 shadow-md"
-          >
-            <FiChevronLeft />
-          </Button>
-          <Card />
-          <Button
-            isIconOnly
-            className="flex items-center justify-center h-fit w-fit bg-white p-4 border rounded-full border-gray-100 shadow-md"
-          >
-            <FiChevronRight />
-          </Button>
-        </section>
+    <section className="relative flex flex-col items-center justify-center min-h-screen max-h-[2000px] font-bold">
+      <header className="text-5xl">Your go-to sales</header>
+      <span className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-80% to-[#8583f7] text-transparent text-6xl">
+        in one flow
+      </span>
+      <section className=" absolute inset-0 min-h-screen max-h-[2000px] bg-transparent max-w-[2300px] grid grid-cols-2 overflow-hidden">
+        <Quadrant1 />
+        <Quadrant2 />
+        <Quadrant3 />
+        <Quadrant4 />
       </section>
-      <div className="h-[100px]" ></div>
-    </NextUIProvider>
+    </section>
   );
 };
 
