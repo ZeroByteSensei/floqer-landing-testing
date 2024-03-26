@@ -22,7 +22,7 @@ const Flow = () => {
   return (
     <NextUIProvider>
       <section
-        className="min-h-screen flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative"
+        className="flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative"
       >
         <Navbar />
         <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">

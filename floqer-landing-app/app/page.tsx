@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className="font-primary">
       <div className="bg-gradient-to-tr from-[#FFFFFF] via-[#f4b7e2] via-[60%] to-[#dedcfc] absolute top-0 right-0 h-[80vh] w-[40vw] opacity-10 blur-lg" />
-      <div className="bg-gradient-to-br from-[#d8dbf9] from-[5%] via-[#ded7fc] via-[30%] via-[#fbebee] via-20% to-[#ffffff]">
+      <div className="bg-gradient-to-br from-[#d8dbf9] from-[5%] via-[#ded7fc] via-[30%] via-[#fbebee] via-20% to-[#ffffff] h-screen max-h-[1080px]  mb-4 md:mb-12 lg:mb-24 ">
         <div className="max-w-[2700px] mx-auto">
           <Section1 />
         </div>
@@ -19,8 +19,8 @@ const page = () => {
       <Section2 />
       <Section3 />
       <Section4  />
-      <div className="max-w-[2700px] mx-auto">
         <Section5 />
+      <div className="max-w-[2700px] mx-auto">
         <Footer />
       </div>
     </div>

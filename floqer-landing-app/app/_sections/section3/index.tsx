@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { Button } from "@nextui-org/button";
 import { NextUIProvider } from "@nextui-org/system";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
@@ -11,7 +11,21 @@ const Section3 = () => {
     <NextUIProvider>
       <section className="w-full flex flex-col items-center justify-center gap-12">
         <section className="flex flex-col gap-4 items-center justify-center text-secondary">
-          <h1 className="font-bold text-6xl ">{"You're in good company"}</h1>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              translateY: "10px",
+            }}
+            whileInView={{
+              opacity: 1,
+              translateY: 0,
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+            className="font-bold text-6xl "
+          >
+            {"You're in good company"}
+          </motion.h1>
           <p className="text-center">{"You don't have to trust our word"}</p>
         </section>
         <section className="w-full flex items-center justify-center gap-8">
@@ -30,7 +44,7 @@ const Section3 = () => {
           </Button>
         </section>
       </section>
-      <div className="h-[100px]" ></div>
+      <div className="h-[100px]"></div>
     </NextUIProvider>
   );
 };
