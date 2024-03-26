@@ -6,7 +6,7 @@ import Quadrant4 from "./Quadrants/Quadrant4";
 
 const Section2 = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen max-h-[1080px] font-bold">
+    <section className="relative flex flex-col items-center justify-center h-screen max-h-[1080px] font-bold  mb-4 md:mb-12 lg:mb-24 ">
       <header className="text-5xl">Your go-to sales</header>
       <span className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-80% to-[#8583f7] text-transparent text-6xl">
         in one flow

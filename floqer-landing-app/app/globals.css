@@ -59,7 +59,7 @@ body {
 
 @font-face {
   font-family: "Recoleta";
-  src: url("/fonts/recoleta-regulardemo.otf") format("opentype");
+  src: url("/fonts/Recoleta-RegularDEMO.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }

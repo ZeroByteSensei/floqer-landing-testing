@@ -26,7 +26,7 @@ const Quadrant4 = () => {
       transition={{
         duration: 2.5,
         ease: "easeInOut",
-        delay: 1.5,
+        delay: 0.6,
       }}
     >
       <Image

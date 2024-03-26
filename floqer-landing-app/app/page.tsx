@@ -18,8 +18,8 @@ const page = () => {
       </div>
       <Section2 />
       <Section3 />
-      <Section4  />
-        <Section5 />
+      <Section4 />
+      <Section5 />
       <div className="max-w-[2700px] mx-auto">
         <Footer />
       </div>

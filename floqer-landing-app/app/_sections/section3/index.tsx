@@ -9,7 +9,7 @@ import Card from "./Card";
 const Section3 = () => {
   return (
     <NextUIProvider>
-      <section className="w-full flex flex-col items-center justify-center gap-12">
+      <section className="w-full flex flex-col items-center justify-center gap-12 mb-4 md:mb-12 lg:mb-24 ">
         <section className="flex flex-col gap-4 items-center justify-center text-secondary">
           <motion.h1
             initial={{
