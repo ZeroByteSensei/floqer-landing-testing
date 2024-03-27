@@ -4,6 +4,7 @@ import { IoMailOutline } from "react-icons/io5";
 import ProductGrp from "./ProductGrp";
 import ResourcesGrp from "./ResourcesGrp";
 import CompanyGrp from "./CompanyGrp";
+import Links from "./Links";
 
 const Footer = () => {
   return (
@@ -31,6 +32,7 @@ const Footer = () => {
           <CompanyGrp />
         </section>
       </section>
+      <Links  />
     </div>
   );
 };
