@@ -53,7 +53,7 @@ const content = [
 
 const ScrollSection = () => {
   return (
-    <div className="max-w-[2700px] mb-4 md:mb-12 lg:mb-24">
+    <div className="max-w-[2700px] mb-4 md:mb-12 lg:mb-24 overscroll-contain">
       <StickyScroll
         content={content}
       />
