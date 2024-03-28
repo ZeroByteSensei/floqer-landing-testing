@@ -90,11 +90,17 @@ export const StickyScroll = ({
         </div>
       </div>
       <motion.div
+        initial={{ opacity: 0 }}
         animate={{
-          background: linearGradients[activeCard % linearGradients.length],
+          // background: linearGradients[activeCard % linearGradients.length],
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "linear",
         }}
         className={cn(
-          "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-[25vh] overflow-hidden",
           contentClassName
         )}
       >

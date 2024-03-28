@@ -49,18 +49,21 @@ const Section3 = () => {
             val={93}
             metric="%"
             description="Customers who say using Floqer has made them better at their job"
+            num2={false}
           />
           <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
           <Stat
             val={20}
             metric="hrs"
             description="Average time per week saved by customers using Floqer"
+            num2
           />
           <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
           <Stat
             val={20}
             metric="hrs"
             description="Average time per week saved by customers using Floqer"
+            num2
           />
         </section>
       </section>
