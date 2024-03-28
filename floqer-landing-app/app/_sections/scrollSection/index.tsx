@@ -86,7 +86,8 @@ const ScrollSection = () => {
       // "
       className="flex"
     >
-      <StickyscrollTemp content={content} />
+      {/* <StickyscrollTemp content={content} /> */}
+      <StickyScroll content={content} />
       {/* <aside 
       // className="lg:col-span-4 order-1"
       >

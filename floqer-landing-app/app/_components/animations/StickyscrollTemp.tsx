@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-import { cn } from "@/app/_utils/cn"; 
+import { cn } from "@/app/_utils/cn";
 
 export const StickyscrollTemp = ({
   content,
@@ -26,6 +26,8 @@ export const StickyscrollTemp = ({
   const cardLength = content.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
+
+    console.log("latest ========= > ", latest)
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
@@ -55,7 +57,7 @@ export const StickyscrollTemp = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className="h-[30rem] min-h-screen overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 scrollbar-hide"
+      className="h-fit py-6 flex justify-center relative space-x-10 rounded-md p-10 scrollbar-hide"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -89,17 +91,24 @@ export const StickyscrollTemp = ({
           <div className="h-40" />
         </div>
       </div>
-      <motion.div
-        animate={{
-          background: linearGradients[activeCard % linearGradients.length],
-        }}
-        className={cn(
-          "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-10 overflow-hidden",
-          contentClassName
-        )}
+      <aside
+      // className="lg:col-span-4 order-1"
       >
-        {content[activeCard].content ?? null}
-      </motion.div>
+        <div className="w-[200px] h-[200px] bg-red-500 sticky top-[120px] pb-6"></div>
+      </aside>
+      {/* <aside className="h-[1000px]">
+        <motion.div
+          animate={{
+            background: linearGradients[activeCard % linearGradients.length],
+          }}
+          className={cn(
+            "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-10 overflow-hidden",
+            contentClassName
+          )}
+        >
+          {content[activeCard].content ?? null}
+        </motion.div>
+      </aside> */}
     </motion.div>
   );
 };
