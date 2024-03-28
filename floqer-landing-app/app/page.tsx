@@ -10,6 +10,7 @@ import ScrollSection from "./_sections/scrollSection";
 import Deel from "@/public/assets/SVGs/section1/Deel";
 import Zoominfo from "@/public/assets/SVGs/section1/Zoominfo";
 import Illumin from "@/public/assets/SVGs/section1/Illumin";
+import Salesforce from "@/public/assets/SVGs/Salesforce";
 
 const page = () => {
   return (
@@ -24,15 +25,23 @@ const page = () => {
           <section className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <Deel />
             <Zoominfo />
-            <Zoominfo />
+            <Salesforce />
             <Illumin />
           </section>
         </section>
       </div>
       <ScrollSection />
       <Section2 />
-      <Section3 />
-      <Section4 />
+      <div className="relative">
+        <div className="absolute inset-0 h-full z-0">
+          <div className="sticky inset-0 h-screen cards__gradient z-0"></div>
+          {/* <div className="w-[100px] h-[100px] bg-green-400 sticky inset-0" /> */}
+        </div>
+        <div className="relative">
+          <Section3 />
+          <Section4 />
+        </div>
+      </div>
       <Section5 />
       <div className="max-w-[2700px] mx-auto">
         <Footer />

@@ -27,8 +27,8 @@ const Flow1 = () => {
   return (
     <>
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, translateY: "2px" }}
+        animate={{ opacity: 1, translateY: "0px" }}
         transition={{
           duration: 0.1,
           delay: 0.2,
@@ -46,11 +46,11 @@ const Flow1 = () => {
       </motion.section>
       {timeIdx > 0 && (
         <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, translateY: "2px" }}
+          animate={{ opacity: 1, translateY: "0px" }}
           transition={{
             duration: 0.1,
-            // delay: 0.8,
+            // delay: 0.5,
           }}
         >
           <FlowTemplate
@@ -91,8 +91,8 @@ const Flow1 = () => {
       )}
       {timeIdx > 1 && (
         <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+        initial={{ opacity: 0, translateY: "2px" }}
+        animate={{ opacity: 1, translateY: "0px" }}
           transition={{
             duration: 0.1,
           }}

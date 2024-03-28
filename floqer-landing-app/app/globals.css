@@ -102,3 +102,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.cards__gradient {
+  background: linear-gradient(165deg, #fff 0%, #f6f4fe 42%, #fcece7 86%, #fff 91%);
+}

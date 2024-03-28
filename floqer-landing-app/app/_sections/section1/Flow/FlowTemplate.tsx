@@ -24,7 +24,7 @@ const FlowTemplate = ({
   delay,
   SecondFlow,
   borderColor,
-  type
+  type,
 }: Props) => {
   const [showPl, setShowPl] = useState(0);
   const [del, setDel] = useState(delay ? delay : 0);
@@ -43,10 +43,16 @@ const FlowTemplate = ({
   return (
     <motion.span
       className={`flex items-center justify-center p-2 border-[3px] rounded-full animate__width gap-2`}
-      style={{ borderColor: borderColor ? borderColor : "black",
-      background: type === Type.linkedin ? "linear-gradient(to right, #fff, #E1F5FF 100%)" : type === Type.apollo ?  "linear-gradient(to right, #fffcf2, #FFF3D0 100%)" : "linear-gradient(to right, #fff, #EBE9FF 100%)"
-      // background: "linear-gradient(to right, #fff, #E1F5FF 100%)"
-    }}
+      style={{
+        borderColor: borderColor ? borderColor : "black",
+        background:
+          type === Type.linkedin
+            ? "linear-gradient(to right, #fff, #E1F5FF 100%)"
+            : type === Type.apollo
+            ? "linear-gradient(to right, #fffcf2, #FFF3D0 100%)"
+            : "linear-gradient(to right, #fff, #EBE9FF 100%)",
+        // background: "linear-gradient(to right, #fff, #E1F5FF 100%)"
+      }}
     >
       <SvgTickWrapper delay={2100}>{Icon}</SvgTickWrapper>
       {showPl === 1 && SubflowComp}

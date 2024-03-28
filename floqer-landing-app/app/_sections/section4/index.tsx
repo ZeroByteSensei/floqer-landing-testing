@@ -1,6 +1,7 @@
 import React from "react";
 import { faqs } from "@/app/_utils/constants";
 import Slot from "./Slot";
+import FAQ from "./Accordion";
 
 const Section4 = () => {
   return (
@@ -14,9 +15,10 @@ const Section4 = () => {
         </header>
       </section>
       <section className="flex flex-col w-full gap-4" >
-        {faqs.map((itr, idx) => (
+        {/* {faqs.map((itr, idx) => (
           <Slot ans={itr.answer} que={itr.question} key={idx} />
-        ))}
+        ))} */}
+        <FAQ />
       </section>
     </div>
   );
