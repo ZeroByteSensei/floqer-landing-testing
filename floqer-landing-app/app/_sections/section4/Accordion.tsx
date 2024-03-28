@@ -9,12 +9,15 @@ export default function FAQ() {
   return (
     <Accordion
       variant="splitted"
+      selectionMode="multiple"
       itemClasses={{
         content: "p-2 pb-4 text-base",
         title: "text-xl font-bold",
         titleWrapper: "p-2"
-        
+
       }}
+      showDivider
+      dividerProps={{ style: { height: "1px", background: "black", width: "full" } }}
       className="gap-8"
     >
       {faqs.map((itr, idx) => (

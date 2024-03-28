@@ -15,6 +15,10 @@ const Section2 = () => {
 
   useEffect(() => {
     console.log("inview val --> ", isInView);
+    if(isInView) {
+      // console.log("==========visible animation started==========")
+      controls.start("visible");
+    }
   }, [controls, isInView]);
 
   return (
@@ -25,9 +29,9 @@ const Section2 = () => {
       </span>
       <section className=" absolute inset-0 h-full bg-transparent max-w-[1800px] grid grid-cols-2 overflow-hidden mx-auto">
         <Quadrant1 ref={ref} />
-        <Quadrant2 />
-        <Quadrant3 />
-        <Quadrant4 />
+        <Quadrant2 controls={controls} />
+        <Quadrant3 controls={controls} />
+        <Quadrant4 controls={controls} />
       </section>
     </section>
   );

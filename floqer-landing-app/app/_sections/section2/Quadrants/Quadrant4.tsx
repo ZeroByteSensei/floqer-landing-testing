@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimationControls, motion } from "framer-motion";
 import Image from "next/image";
 
 import Claude from "@/public/assets/SVGs/Quadrant4/claude.svg";
@@ -9,20 +9,30 @@ import Hubspot from "@/public/assets/SVGs/Quadrant4/hubspot.svg";
 import Phantom from "@/public/assets/SVGs/Quadrant4/phantomSVG.svg";
 import BlueD from "@/public/assets/SVGs/Quadrant4/BlueD.png";
 
-const Quadrant4 = () => {
+interface Props {
+  controls: AnimationControls;
+}
+
+const Quadrant4 = ({ controls }: Props) => {
   return (
     <motion.div
       className="flex items-start justify-start text-3xl relative"
+      variants={{
+        hidden: { scale: 1 },
+        visible: { scale: 1.15 },
+      }}
       style={{
-        originX: 0, originY: 0,
+        originX: 0,
+        originY: 0,
       }}
       initial={{
         scale: 1,
       }}
-      whileInView={{
-        scale: 1.15,
-      }}
-      viewport={{ once: true }}
+      animate={controls}
+      // whileInView={{
+      //   scale: 1.15,
+      // }}
+      // viewport={{ once: true }}
       transition={{
         duration: 2.5,
         ease: "easeInOut",

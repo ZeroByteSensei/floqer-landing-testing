@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimationControls, motion } from "framer-motion";
 import Instantly from "@/public/assets/SVGs/Quadrant3/Instantly.svg";
 import Twitter from "@/public/assets/SVGs/Quadrant3/x-social-media.svg";
 import Sendgrid from "@/public/assets/SVGs/Quadrant3/sendgrid.svg";
@@ -10,20 +10,31 @@ import ProxyCurl from "@/public/assets/SVGs/Quadrant3/ProxyCurl.jpeg";
 import Outreach from "@/public/assets/SVGs/Quadrant3/Outreach.svg";
 
 import Image from "next/image";
-const Quadrant3 = () => {
+
+interface Props {
+  controls: AnimationControls;
+}
+
+const Quadrant3 = ({ controls }: Props) => {
   return (
     <motion.div
       className="flex items-start justify-end text-3xl relative"
+      variants={{
+        hidden: { scale: 1 },
+        visible: { scale: 1.15 },
+      }}
       style={{
-        originX: 1, originY: 0,
+        originX: 1,
+        originY: 0,
       }}
       initial={{
         scale: 1,
       }}
-      whileInView={{
-        scale: 1.15,
-      }}
-      viewport={{ once: true }}
+      animate={controls}
+      // whileInView={{
+      //   scale: 1.15,
+      // }}
+      // viewport={{ once: true }}
       transition={{
         duration: 2.5,
         ease: "easeInOut",

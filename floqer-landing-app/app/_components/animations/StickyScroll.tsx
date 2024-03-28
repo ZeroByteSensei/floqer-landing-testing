@@ -89,23 +89,30 @@ export const StickyScroll = ({
           <div className="h-40" />
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          // background: linearGradients[activeCard % linearGradients.length],
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "linear",
-        }}
-        className={cn(
-          "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-[25vh] overflow-hidden",
-          contentClassName
-        )}
-      >
-        {content[activeCard].content ?? null}
-      </motion.div>
+      {content.map((itr, idx) => {
+        if (idx === activeCard) {
+          return (
+            <motion.div
+              initial={{ opacity: 0 }}
+              key={idx}
+              animate={{
+                // background: linearGradients[activeCard % linearGradients.length],
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.5,
+                ease: "linear",
+              }}
+              className={cn(
+                "hidden lg:block h-[30rem] w-[30rem] rounded-md bg-white sticky top-[25vh] overflow-hidden",
+                contentClassName
+              )}
+            >
+              {content[activeCard].content ?? null}
+            </motion.div>
+          );
+        } else return null;
+      })}
     </motion.div>
   );
 };

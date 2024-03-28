@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimationControls, motion } from "framer-motion";
 import Image from "next/image";
 import Salesforce from "@/public/assets/SVGs/Quadrant2/salesforce.svg";
 import OpenAi from "@/public/assets/SVGs/Quadrant2/openai.svg";
@@ -9,10 +9,18 @@ import SalesNav from "@/public/assets/SVGs/Quadrant2/sales_navigator.svg";
 import Redwolf from "@/public/assets/SVGs/Quadrant2/RedWolf.png";
 import Kaspr from "@/public/assets/SVGs/Quadrant2/Kaspr.jpeg";
 
-const Quadrant2 = () => {
+interface Props {
+  controls: AnimationControls;
+}
+
+const Quadrant2 = ({ controls }: Props) => {
   return (
     <motion.div
       className="flex items-end justify-start text-3xl relative"
+      variants={{
+        hidden: { scale: 1 },
+        visible: { scale: 1.15 },
+      }}
       style={{
         originX: 0,
         originY: 1,
@@ -20,10 +28,9 @@ const Quadrant2 = () => {
       initial={{
         scale: 1,
       }}
-      whileInView={{
-        scale: 1.15,
-      }}
-      viewport={{ once: true }}
+      animate={controls}
+      // whileInView="visible"
+      // viewport={{ once: true }}
       transition={{
         duration: 2.5,
         ease: "easeInOut",
