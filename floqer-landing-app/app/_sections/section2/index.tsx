@@ -22,9 +22,9 @@ const Section2 = () => {
   }, [controls, isInView]);
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen max-h-[1080px] font-bold  mb-4 md:mb-12 lg:mb-24 ">
-      <header className="text-4xl">Your go-to sales tools</header>
-      <span className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-80% to-[#8583f7] text-transparent text-6xl">
+    <section className="relative flex flex-col items-center justify-center h-screen max-h-[1080px] font-bold  mb-4 md:mb-12 lg:mb-24 font-secondary">
+      <header className="text-4xl font-medium">Your go-to sales tools</header>
+      <span className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-[-15%] to-[#8583f7] to-[85%] text-transparent text-6xl">
         in one flow
       </span>
       <section className=" absolute inset-0 h-full bg-transparent max-w-[1800px] grid grid-cols-2 overflow-hidden mx-auto">

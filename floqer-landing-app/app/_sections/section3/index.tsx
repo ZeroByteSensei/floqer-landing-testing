@@ -23,9 +23,11 @@ const Section3 = () => {
             }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-            className="font-bold text-6xl "
+            className="font-bold text-6xl font-secondary flex flex-col items-center justify-center"
           >
-            {"You're in good company"}
+            <span  >{"You're in "}</span>
+            <span  >{"good company"}</span>
+            
           </motion.h1>
           <p className="text-center">{"You don't have to trust our word"}</p>
         </section>

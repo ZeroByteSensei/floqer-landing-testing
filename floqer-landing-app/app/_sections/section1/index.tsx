@@ -27,10 +27,10 @@ const Flow = () => {
         <Navbar />
         <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
           <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
-            <h1 className="font-light text-6xl text-[#51407D]">
+            <h1 className="font-secondary text-6xl text-[#51407D]">
               Not just another sales tool,
             </h1>
-            <h1 className="font-bold text-6xl text-[#51407D]">
+            <h1 className="font-secondary font-semibold text-6xl text-[#51407D]">
               all the sales tools
             </h1>
             <span className="font-light text-base w-full md:w-4/5">

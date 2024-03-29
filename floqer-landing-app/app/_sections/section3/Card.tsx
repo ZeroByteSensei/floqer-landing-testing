@@ -11,7 +11,7 @@ const Card = () => {
     >
       <span className="font-bold text-6xl text-tertiary">{`"`}</span>
       <section className="flex flex-col items-start gap-2">
-        <header className="font-bold text-3xl">
+        <header className="font-bold text-3xl font-secondary">
           Response rate was 2X normal
         </header>
         <span>

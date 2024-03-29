@@ -37,7 +37,7 @@ const Stat = ({ val, metric, description, num2 }: Props) => {
       <div className="flex justify-center items-end ">
         <span
           ref={statRef}
-          className="font-bold text-8xl text-secondary"
+          className="font-bold text-8xl text-secondary font-secondary"
         ></span>
         <span className="text-[#9077D2]">{metric}</span>
       </div>

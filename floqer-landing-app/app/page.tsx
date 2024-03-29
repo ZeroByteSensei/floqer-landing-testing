@@ -20,9 +20,9 @@ const page = () => {
         <div className="max-w-[2700px] mx-auto mb-4 md:mb-12 lg:mb-24">
           <Section1 />
         </div>
-        <section className="w-full flex flex-col items-center justify-center gap-2">
+        <section className="w-full flex flex-col items-center justify-center gap-4">
           <header>Loved by folks from</header>
-          <section className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <section className="flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-12 items-center justify-center">
             <Deel />
             <Zoominfo />
             <Salesforce />
