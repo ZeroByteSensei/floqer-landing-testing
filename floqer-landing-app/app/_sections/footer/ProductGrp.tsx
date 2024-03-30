@@ -7,8 +7,8 @@ const arr = ["TapWize", "API", "Integrations", "Pricing", "Get a demo"];
 const ProductGrp = () => {
   return (
     <div className="flex flex-col gap-4 w-36">
-      <span className="font-bold text-secondary text-lg">Product</span>
-      <div className="flex flex-col gap-2 text-gray-500">
+      <span className="font-bold text-secondary text-xl">Product</span>
+      <div className="flex flex-col gap-1 text-gray-500">
         {arr.map((itr) => (
           <motion.span
             key={itr}

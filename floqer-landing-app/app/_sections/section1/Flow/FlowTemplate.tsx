@@ -28,6 +28,15 @@ const FlowTemplate = ({
 }: Props) => {
   const [showPl, setShowPl] = useState(0);
   const [del, setDel] = useState(delay ? delay : 0);
+  const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    const tot = setTimeout(() => {
+      setToggle(() => true);
+      console.log("toggle set to true");
+    }, 1000);
+    return () => clearTimeout(tot);
+  }, []);
 
   useEffect(() => {
     const tm = setTimeout(() => {
@@ -41,23 +50,30 @@ const FlowTemplate = ({
   }, []);
 
   return (
-    <motion.span
-      className={`flex items-center justify-center p-2 border-[3px] rounded-full animate__width gap-2`}
-      style={{
-        borderColor: borderColor ? borderColor : "black",
-        background:
-          type === Type.linkedin
-            ? "linear-gradient(to right, #fff, #E1F5FF 100%)"
-            : type === Type.apollo
-            ? "linear-gradient(to right, #fffcf2, #FFF3D0 100%)"
-            : "linear-gradient(to right, #fff, #EBE9FF 100%)",
-        // background: "linear-gradient(to right, #fff, #E1F5FF 100%)"
-      }}
-    >
-      <SvgTickWrapper delay={2100}>{Icon}</SvgTickWrapper>
-      {showPl === 1 && SubflowComp}
-      {showPl === 2 && SecondFlow}
-    </motion.span>
+    <span className={`closed ${toggle ? "opened" : ""}`}>
+      <span>dsjdksjdsjjdskjdksjdkjskdjskjdjsdjskj </span>
+      {showPl === 1 && <span>dsjdksjdsjjdskjdksjdkjskdjskjdjsdjskj </span>}
+
+      {/* <motion.span
+        className={`flex items-center justify-center p-2 border-[3px] rounded-full animate__width gap-2 `}
+        style={{
+          borderColor: borderColor ? borderColor : "black",
+          background:
+            type === Type.linkedin
+              ? "linear-gradient(to right, #fff, #E1F5FF 100%)"
+              : type === Type.apollo
+              ? "linear-gradient(to right, #fffcf2, #FFF3D0 100%)"
+              : "linear-gradient(to right, #fff, #EBE9FF 100%)",
+        }}
+      >
+        <SvgTickWrapper delay={2100}>{Icon}</SvgTickWrapper>
+        {
+        showPl === 1 && 
+        SubflowComp
+        }
+        {showPl === 2 && SecondFlow}
+      </motion.span> */}
+    </span>
   );
 };
 

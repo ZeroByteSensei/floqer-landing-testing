@@ -37,7 +37,7 @@ const content = [
 
 const ScrollSection = () => {
   return (
-    <div className="max-w-[2700px] mb-4 md:mb-12 lg:mb-24 bg-white flex justify-center items-center h-fit ">
+    <div className=" mb-4 md:mb-12 lg:mb-24 bg-white flex justify-center items-center h-fit ">
       <StickyScroll content={content} />
     </div>
   );

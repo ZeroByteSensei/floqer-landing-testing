@@ -21,9 +21,7 @@ import WrapperFlow from "./Flow/WrapperFlows";
 const Flow = () => {
   return (
     <NextUIProvider>
-      <section
-        className="flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative"
-      >
+      <section className="flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative">
         <Navbar />
         <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
           <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
@@ -38,12 +36,19 @@ const Flow = () => {
               web scraping, and AI messaging to enrich your data and automate
               your outbound at scale.
             </span>
-            <Button className=" bg-black text-white">
-              Request a demo
-            </Button>
+            <Button className=" bg-black text-white">Request a demo</Button>
           </div>
           <section className="flex flex-1 flex-col items-start gap-2">
-            <WrapperFlow />
+            {/* <FlowTemplate
+              Icon={<Linkedin size={"50px"} />}
+              borderColor="#007AB9"
+              type={Type.linkedin}
+              payload="Importing your leads..."
+              delay={500}
+              SubflowComp={<AnimateText payload="Importing your leads..." />}
+              SecondFlow={<AnimateText payload="Leads imported..." />}
+            /> */}
+            {/* <WrapperFlow /> */}
           </section>
         </section>
         {/* <div className="absolute w-full h-[100px] bottom-[-1rem] " ></div> */}

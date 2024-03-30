@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Quadrant1 from "./Quadrants/Quadrant1";
 import Quadrant2 from "./Quadrants/Quadrant2";
 import Quadrant3 from "./Quadrants/Quadrant3";
@@ -11,23 +11,25 @@ import { useInView, useAnimationControls } from "framer-motion";
 const Section2 = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+  const [done, setDone] = useState(false);
   const controls = useAnimationControls();
 
   useEffect(() => {
-    console.log("inview val --> ", isInView);
-    if(isInView) {
+    // console.log("inview val --> ", isInView);
+    if (isInView && !done) {
       // console.log("==========visible animation started==========")
+      setDone(() => true);
       controls.start("visible");
     }
   }, [controls, isInView]);
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen max-h-[1080px] font-bold  mb-4 md:mb-12 lg:mb-24 font-secondary">
+    <section className="relative flex flex-col items-center justify-center h-screen font-bold  mb-4 md:mb-12 lg:mb-24 font-secondary max-h-[776px]">
       <header className="text-4xl font-medium">Your go-to sales tools</header>
       <span className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-[-15%] to-[#8583f7] to-[85%] text-transparent text-6xl">
         in one flow
       </span>
-      <section className=" absolute inset-0 h-full bg-transparent max-w-[1800px] grid grid-cols-2 overflow-hidden mx-auto">
+      <section className=" absolute inset-0 h-full bg-transparent grid grid-cols-2 max-w-[1520px] overflow-hidden mx-auto">
         <Quadrant1 ref={ref} />
         <Quadrant2 controls={controls} />
         <Quadrant3 controls={controls} />

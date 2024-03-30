@@ -17,7 +17,7 @@ const Section5 = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-[#aea8f9] from-0% via-[#dcbef9] via-40% to-[#f9dadf] to-100% bg-clip-text text-7xl text-transparent font-secondary">
+      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-[#aea8f9] from-0% via-[#dcbef9] via-40% to-[#f9dadf] to-100% bg-clip-text text-6xl md:text-7xl text-transparent font-secondary">
         <span>Scale your outbounds in</span>
         <span>seconds, not months.</span>
       </div>

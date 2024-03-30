@@ -3,7 +3,7 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { FaPlus } from "react-icons/fa";
-import { faqs } from "@/app/_utils/constants";
+import { faqs } from "@/app/_utils/constants.tsx";
 
 export default function FAQ() {
   return (
@@ -27,7 +27,7 @@ export default function FAQ() {
           title={itr.question}
           // indicator={<FaPlus />}
         >
-          <span>{itr.answer}</span>
+          <span className="font-light">{itr.answer}</span>
         </AccordionItem>
       ))}
       {/* <AccordionItem

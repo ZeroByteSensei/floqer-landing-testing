@@ -7,8 +7,8 @@ const arr = ["Blog", "Knowledge base", "Support"];
 const ResourcesGrp = () => {
   return (
     <div className="flex flex-col gap-4 w-36">
-      <span className="font-bold text-secondary">Resources</span>
-      <div className="flex flex-col gap-2 text-gray-500">
+      <span className="font-bold text-secondary text-xl">Resources</span>
+      <div className="flex flex-col gap-1 text-gray-500">
         {arr.map((itr) => (
           <motion.span
           key={itr}

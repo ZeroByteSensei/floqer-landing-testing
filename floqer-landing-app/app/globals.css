@@ -85,7 +85,6 @@ body {
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Recoleta";
   src: url("/fonts/Recoleta/Recoleta-Medium.ttf") format("truetype");
@@ -111,22 +110,41 @@ body {
 } */
 
 button {
-  @apply rounded-md
+  @apply rounded-md;
+}
+/* 
+@keyframes kf {
+  0% {
+    max-width: 20px;
+  }
+  100% {
+    max-width: 100%;
+  }
 }
 
 .animate__width {
-  transition: width 0.3s linear;
-}
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0.3s;
+  animation: kf 0.3s linear 1.3s forwards;
+} */
 
 .opened {
-  max-height: 999px !important;
-  transition: all 1s linear !important;
+  max-width: 999px !important;
+  transition: all;
+  transition-duration: 0.6s !important;
+  transition-timing-function: linear !important;
+  overflow: hidden;
 }
 
 .closed {
-  max-height: 0;
+  max-width: 72px;
   padding: 0;
-  /* transition: all 1s linear !important; */
+  transition: all;
+  transition-duration: 0.3s !important;
+  transition-timing-function: linear !important;
+  overflow: hidden;
 }
 
 /* .closed {
@@ -139,12 +157,52 @@ button {
   max-height: 9999px;
 } */
 
-
 .grid__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .cards__gradient {
-  background: linear-gradient(165deg, #fff 0%, #f6f4fe 42%, #fcece7 86%, #fff 91%);
+  background: linear-gradient(
+    165deg,
+    #fff 0%,
+    #f6f4fe 42%,
+    #fcece7 86%,
+    #fff 91%
+  );
 }
+
+/* testing ground */
+
+.wrapper {
+  display: inline-block;
+
+  /* height: 20px; */
+  width: auto;
+
+  padding: 10px;
+
+  /* background:#DDD; */
+}
+
+.content {
+  /* display:inline-block; */
+
+  width: 0%;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* background:#c3c; */
+}
+
+.wrapper:hover .content {
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+
+  width: 100%;
+}
+
+/* testing ground */

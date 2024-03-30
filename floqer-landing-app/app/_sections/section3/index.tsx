@@ -10,7 +10,7 @@ import Stat from "./Stat";
 const Section3 = () => {
   return (
     <NextUIProvider>
-      <section className="w-full flex flex-col items-center justify-center gap-12 mb-4 md:mb-12 lg:mb-24 min-h-screen py-6">
+      <section className="w-full flex flex-col items-center justify-center gap-12 mb-4 md:mb-12 lg:mb-24 min-h-screen xl:min-h-fit py-6 max-h-[2100px] bg-gradient-to-b from-[#fff] from-0% via-[#f2effe] via-[42%] to-[#fcece7] to-100% pb-6 md:pb-12 lg:pb-24">
         <section className="flex flex-col gap-4 items-center justify-center text-secondary">
           <motion.h1
             initial={{
@@ -23,11 +23,10 @@ const Section3 = () => {
             }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-            className="font-bold text-6xl font-secondary flex flex-col items-center justify-center"
+            className="font-bold text-5xl lg:text-6xl font-secondary flex flex-col items-center justify-center"
           >
-            <span  >{"You're in "}</span>
-            <span  >{"good company"}</span>
-            
+            <span>{"You're in "}</span>
+            <span>{"good company"}</span>
           </motion.h1>
           <p className="text-center">{"You don't have to trust our word"}</p>
         </section>
@@ -46,7 +45,7 @@ const Section3 = () => {
             <FiChevronRight />
           </Button>
         </section>
-        <section className="w-full max-w-[90vw] flex flex-col md:flex-row items-center md:items-start justify-center gap-4 h-fit mt-4 md:mt-12">
+        <section className="w-full max-w-[90vw] flex flex-col sm:flex-row items-center md:items-start justify-center gap-4 h-fit mt-4 md:mt-12">
           <Stat
             val={93}
             metric="%"

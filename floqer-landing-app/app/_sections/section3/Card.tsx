@@ -3,7 +3,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 const Card = () => {
   return (
-    <div className="flex flex-col p-12 items-start justify-center rounded-lg border border-gray-50 max-w-[956px]"
+    <div className="flex flex-col p-12 items-start justify-center rounded-lg border border-gray-50 max-w-[956px] bg-white "
     
       style={{
         boxShadow: "0px 0px 14px #E8A496",

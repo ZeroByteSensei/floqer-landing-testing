@@ -19,7 +19,7 @@ const index = () => {
       transition={{
         duration: 0.3,
       }}
-      className="w-[93%] max-w-[2500px] flex items-center gap-2 p-4 md:py-6 md:px-10 justify-between bg-white shadow-lg rounded-full"
+      className="w-[90%] max-w-[1920px] flex items-center gap-2 p-4 md:py-6 md:px-10 justify-between bg-white shadow-lg rounded-full"
     >
       <section className="flex items-center justify-between w-fit sm:w-1/2 max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
         <AnimateLoad delay={0}>
