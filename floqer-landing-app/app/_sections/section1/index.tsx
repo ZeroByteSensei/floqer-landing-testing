@@ -17,13 +17,14 @@ import { Type } from "@/app/_utils/constants";
 import { NextUIProvider } from "@nextui-org/system";
 import { Button } from "@nextui-org/button";
 import WrapperFlow from "./Flow/WrapperFlows";
+import FlowSVG from "@/public/assets/SVGs/section1/Flow.svg"
 
 const Flow = () => {
   return (
     <NextUIProvider>
       <section className="flex flex-col items-center gap-4 sm:gap-12 md:gap-24 pt-4 relative">
         <Navbar />
-        <section className="flex flex-col md:flex-row items-start p-12 justify-between w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
+        <section className="flex flex-col md:flex-row items-start justify-between p-6 lg:p-12 w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
           <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
             <h1 className="font-secondary text-6xl text-[#51407D]">
               Not just another sales tool,
@@ -48,7 +49,8 @@ const Flow = () => {
               SubflowComp={<AnimateText payload="Importing your leads..." />}
               SecondFlow={<AnimateText payload="Leads imported..." />}
             /> */}
-            <WrapperFlow />
+            {/* <WrapperFlow /> */}
+            <Image src={FlowSVG} alt="Flow-explaination" className="w-full " />
           </section>
         </section>
         {/* <div className="absolute w-full h-[100px] bottom-[-1rem] " ></div> */}

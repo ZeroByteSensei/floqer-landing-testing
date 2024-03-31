@@ -51,24 +51,24 @@ const Section3 = () => {
         </section>
         <section className="w-full max-w-[90vw] flex flex-col sm:flex-row items-center md:items-start justify-center gap-4 h-fit mt-4 md:mt-12">
           <Stat
-            val={93}
+            val={200}
             metric="%"
-            description="Customers who say using Floqer has made them better at their job"
-            num2={false}
+            description="more deals closed by sales teams using Floqer to automate their sales process."
+            num1
           />
           <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
           <Stat
-            val={20}
+            val={12}
             metric="hrs"
-            description="Average time per week saved by customers using Floqer"
-            num2
+            description="average time saved per week/SDR in manual work such as data entry, research and logging"
+            num2={true}
           />
           <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
           <Stat
-            val={20}
-            metric="hrs"
-            description="Average time per week saved by customers using Floqer"
-            num2
+            val={15}
+            metric="mins"
+            description="average time it takes to setup a Floq to automate an existing sales process"
+            // num2
           />
         </section>
       </section>

@@ -46,8 +46,8 @@ const Page = () => {
 
   return (
     <div className="font-primary">
-      <div className="bg-gradient-to-tr from-[#FFFFFF] via-[#f4b7e2] via-[60%] to-[#dedcfc] absolute top-0 right-0 h-[80vh] w-[40vw] opacity-10 blur-lg" />
-      <div className="bg-gradient-to-br from-[#d8dbf9] from-[5%] via-[#ded7fc] via-[30%] via-[#fbebee] via-20% to-[#ffffff] min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-4 md:mb-12 lg:mb-24">
+      <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
+      <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-4 md:mb-12 lg:mb-24">
         <div className="max-w-[2700px] mx-auto mb-4 md:mb-12 lg:mb-24">
           <Section1 />
         </div>

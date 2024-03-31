@@ -4,22 +4,22 @@
   inherits: false;
 }
 
-.num1 {
-  animation: counter1 2s ease-out forwards;
+.num3 {
+  animation: counter3 2s ease-out forwards;
   counter-reset: num var(--num);
   // font: 800 40px system-ui;
   // padding: 2rem;
 }
-.num1::after {
+.num3::after {
   content: counter(num);
 }
 
 
-@keyframes counter1 {
+@keyframes counter3 {
   from {
     --num: 0;
   }
   to {
-    --num: 200;
+    --num: 15;
   }
 }

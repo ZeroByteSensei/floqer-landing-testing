@@ -206,3 +206,24 @@ button {
 }
 
 /* testing ground */
+
+
+.first__gradient {
+  background: linear-gradient(
+    165deg,
+    #fff -15%,
+    #ded7fc 5%,
+    #fbebee 17%,
+    #fff 65%
+  );
+}
+
+.second__gradient {
+  background: linear-gradient(
+    75deg,
+    #fff 0%,
+    #f4b7e2 62%,
+    #f7ceec 79%,
+    #f6c485 100%
+  );
+}

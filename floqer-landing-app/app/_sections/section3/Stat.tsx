@@ -4,15 +4,17 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import "./num1.scss";
 import "./num2.scss";
+import "./num3.scss"
 
 interface Props {
   val: number;
   metric: string;
   description?: string;
   num2?: boolean;
+  num1?: boolean;
 }
 
-const Stat = ({ val, metric, description, num2 }: Props) => {
+const Stat = ({ val, metric, description, num2, num1 }: Props) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const statRef = React.useRef<HTMLDivElement>(null);
   const [done, setDone] = useState(false);
@@ -25,7 +27,8 @@ const Stat = ({ val, metric, description, num2 }: Props) => {
       setDone(() => true);
       // console.log("num2 --> ", num2)
       if(num2) statRef.current.classList.add("num2");
-      else statRef.current.classList.add("num1");
+      else if(num1) statRef.current.classList.add("num1");
+      else statRef.current.classList.add("num3");
     }
   }, [statRef, isInView]);
 
