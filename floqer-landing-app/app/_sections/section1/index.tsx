@@ -48,7 +48,7 @@ const Flow = () => {
               SubflowComp={<AnimateText payload="Importing your leads..." />}
               SecondFlow={<AnimateText payload="Leads imported..." />}
             /> */}
-            {/* <WrapperFlow /> */}
+            <WrapperFlow />
           </section>
         </section>
         {/* <div className="absolute w-full h-[100px] bottom-[-1rem] " ></div> */}
