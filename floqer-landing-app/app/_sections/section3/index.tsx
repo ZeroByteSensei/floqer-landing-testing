@@ -6,6 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import React from "react";
 import Card from "./Card";
 import Stat from "./Stat";
+import SwipeDump from "./Swipedump";
 
 const Section3 = () => {
   return (
@@ -31,7 +32,7 @@ const Section3 = () => {
           <p className="text-center">{"You don't have to trust our word"}</p>
         </section>
         <section className="w-full flex items-center justify-center gap-8">
-          <Button
+          {/* <Button
             isIconOnly
             className="flex items-center justify-center h-fit w-fit bg-white p-4 border rounded-full border-gray-100 shadow-md"
           >
@@ -43,7 +44,10 @@ const Section3 = () => {
             className="flex items-center justify-center h-fit w-fit bg-white p-4 border rounded-full border-gray-100 shadow-md"
           >
             <FiChevronRight />
-          </Button>
+          </Button> */}
+          <div className="hidden xl:block" ><SwipeDump /></div>
+          
+
         </section>
         <section className="w-full max-w-[90vw] flex flex-col sm:flex-row items-center md:items-start justify-center gap-4 h-fit mt-4 md:mt-12">
           <Stat
