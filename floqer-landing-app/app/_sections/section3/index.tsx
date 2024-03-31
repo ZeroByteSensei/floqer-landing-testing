@@ -23,7 +23,7 @@ const Section3 = () => {
               translateY: 0,
             }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
             className="font-bold text-5xl lg:text-6xl font-secondary flex flex-col items-center justify-center"
           >
             <span>{"You're in "}</span>

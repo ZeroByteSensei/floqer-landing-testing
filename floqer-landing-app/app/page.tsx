@@ -19,30 +19,30 @@ const Page = () => {
   const wrapperRef = React.useRef<HTMLDivElement>(null);
   const lowerRef = React.useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (!wrapperRef.current) return;
-    const listener = () => {
-      const topPos = wrapperRef.current?.getBoundingClientRect().top;
-      if(topPos && topPos <= 0) {
-        console.log("-------------Top reached-------------");
-      }
-    };
-    document.addEventListener("scroll", listener);
-    return () => document.removeEventListener("scroll", listener);
-  }, [wrapperRef.current]);
+  // useEffect(() => {
+  //   if (!wrapperRef.current) return;
+  //   const listener = () => {
+  //     const topPos = wrapperRef.current?.getBoundingClientRect().top;
+  //     if(topPos && topPos <= 0) {
+  //       console.log("-------------Top reached-------------");
+  //     }
+  //   };
+  //   document.addEventListener("scroll", listener);
+  //   return () => document.removeEventListener("scroll", listener);
+  // }, [wrapperRef.current]);
 
-  useEffect(() => {
-    if(!lowerRef.current) return;
-    const listener = () => {
-      const topPos = lowerRef.current?.getBoundingClientRect().top;
-      const windowBottom = window.innerHeight;
-      if(topPos && topPos <= windowBottom) {
-        console.log("-------------next frame entered the screen-------------");
-      }
-    }
-    document.addEventListener("scroll", listener);
-    return () => document.removeEventListener("scroll", listener);
-  }, [lowerRef.current])
+  // useEffect(() => {
+  //   if(!lowerRef.current) return;
+  //   const listener = () => {
+  //     const topPos = lowerRef.current?.getBoundingClientRect().top;
+  //     const windowBottom = window.innerHeight;
+  //     if(topPos && topPos <= windowBottom) {
+  //       console.log("-------------next frame entered the screen-------------");
+  //     }
+  //   }
+  //   document.addEventListener("scroll", listener);
+  //   return () => document.removeEventListener("scroll", listener);
+  // }, [lowerRef.current])
 
   return (
     <div className="font-primary">

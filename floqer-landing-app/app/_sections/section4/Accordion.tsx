@@ -2,7 +2,8 @@
 
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { FaPlus } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { CgMathPlus } from "react-icons/cg";
 import { faqs } from "@/app/_utils/constants.tsx";
 
 export default function FAQ() {
@@ -13,11 +14,12 @@ export default function FAQ() {
       itemClasses={{
         content: "p-2 pb-4 text-base",
         title: "text-xl font-bold",
-        titleWrapper: "p-2"
-
+        titleWrapper: "p-2",
       }}
       showDivider
-      dividerProps={{ style: { height: "1px", background: "black", width: "full" } }}
+      dividerProps={{
+        style: { height: "1px", background: "black", width: "full" },
+      }}
       className="gap-8"
     >
       {faqs.map((itr, idx) => (
@@ -25,6 +27,9 @@ export default function FAQ() {
           key={idx}
           aria-label="itr"
           title={itr.question}
+          indicator={({ isOpen }) =>
+            isOpen ? <IoClose size={"20px"} /> : <CgMathPlus size={"20px"} />
+          }
           // indicator={<FaPlus />}
         >
           <span className="font-light">{itr.answer}</span>

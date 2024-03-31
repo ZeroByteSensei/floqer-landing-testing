@@ -6,17 +6,20 @@ const itemVariants: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
-      stiffness: 300,
-      duration: 0.7,
+      // type: "spring",
+      // stiffness: 300,
+      // duration: 0.7,
       // damping: 24
+      ease: "linear",
+      duration: 0.3
     },
   },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+  closed: { opacity: 0, y: 20, transition: { duration: 0 } },
 };
 
 const itemClass =
-  "cursor-pointer border-2 border-gray-200 border-transparent hover:text-primary hover:border-primary p-2 rounded-md transition-all";
+  "cursor-pointer border-2 border-gray-300 hover:text-primary hover:border-primary p-2 rounded-md transition-all";
+
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,7 +57,7 @@ export default function Dropdown() {
               clipPath: "inset(0% 0% 0% 0% round 10px)",
               transition: {
                 type: "spring",
-                bounce: 0,
+                // bounce: 0,
                 duration: 0.7,
                 // delayChildren: 0.3,
                 staggerChildren: 0.05,
@@ -64,15 +67,15 @@ export default function Dropdown() {
               clipPath: "inset(10% 50% 90% 50% round 10px)",
               transition: {
                 type: "spring",
-                bounce: 0,
+                // bounce: 0,
                 duration: 0.3,
               },
             },
           }}
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
-          className="absolute top-10 right-[-3.5rem] bg-gray-100 shadow-md rounded-md p-2 flex flex-col gap-2 w-40 bg-opacity-90 backdrop-blur-sm"
+          className="absolute top-10 right-[-3.5rem] bg-white shadow-md rounded-md p-2 flex flex-col gap-2 w-40 backdrop-blur-sm bg-opacity-75"
         >
-          <motion.span variants={itemVariants} className={itemClass}>
+          <motion.span variants={itemVariants} className={"cursor-pointer border-2 border-gray-300 hover:text-secondary hover:border-secondary p-2 rounded-md transition-all"}>
             How it works
           </motion.span>
           <motion.span variants={itemVariants} className={itemClass}>
