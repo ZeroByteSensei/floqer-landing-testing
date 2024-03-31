@@ -17,13 +17,13 @@ const Section5 = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-[#aea8f9] from-0% via-[#dcbef9] via-40% to-[#f9dadf] to-100% bg-clip-text text-6xl md:text-7xl text-transparent font-secondary">
+      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#aea8f9] from-30% via-[#dcbef9] via-45% to-[#f5c4cc] to-70% bg-clip-text text-6xl md:text-7xl text-transparent font-secondary">
         <span>Scale your outbounds in</span>
         <span>seconds, not months.</span>
       </div>
       <Button
-        className="text-4xl px-8 font-bold py-4 h-fit w-fit text-secondary
-        bg-gradient-to-br from-[#aea8f9] from-[-50%] to-[#f9dadf] to-70%"
+        className="text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
+        bg-gradient-to-r from-[#dcbef9] from-[7%] via-[#f5c3cc] via-[49%] to-[#f9dadf] to-100%"
       >
         Get in touch
       </Button>

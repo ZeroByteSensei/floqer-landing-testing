@@ -48,16 +48,16 @@ const Page = () => {
     <div className="font-primary">
       <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
       <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-4 md:mb-12 lg:mb-24">
-        <div className="max-w-[2700px] mx-auto mb-4 md:mb-12 lg:mb-24">
+        <div className="max-w-[2700px] mx-auto mb-4 md:mb-12">
           <Section1 />
         </div>
-        <section className="w-full flex flex-col items-center justify-center gap-4">
-          <header>Loved by folks from</header>
+        <section className="w-full flex flex-col items-center justify-center gap-4 font-secondary">
+          <header className="text-3xl text-secondary" >Loved by folks from</header>
           <section className="flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-12 items-center justify-center">
-            <Deel />
-            <Zoominfo />
-            <Salesforce />
-            <Illumin />
+            <Deel color="#51407D" />
+            <Zoominfo color="#51407D" />
+            <Salesforce color="#51407D" />
+            <Illumin color="#51407D" />
           </section>
         </section>
       </div>
