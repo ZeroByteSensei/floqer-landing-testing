@@ -23,7 +23,7 @@ const index = () => {
     >
       <section className="flex items-center justify-between w-fit sm:w-1/2 max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
         <AnimateLoad delay={0}>
-          <header className="text-4xl font-semibold text-[#5549D8] font-secondary">floqer</header>
+          <header className="text-4xl font-semibold text-[#8C74CC] font-secondary">floqer</header>
         </AnimateLoad>
         <Tabs />
         <Dropdown />

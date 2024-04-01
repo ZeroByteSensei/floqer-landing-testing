@@ -4,10 +4,14 @@ import React, { forwardRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Apollo from "@/public/assets/SVGs/ApolloSVG.svg";
+import apollo from "@/public/assets/PNGs/apollo.png";
 import Outlook from "@/public/assets/SVGs/Quadrant1/outlook.svg";
 import Linkedin from "@/public/assets/SVGs/Linkedin";
+import Lkd from "@/public/assets/PNGs/linkedin.png";
 import Zoominfo from "@/public/assets/SVGs/Quadrant1/zoominfo.svg";
+import Zoom from "@/public/assets/PNGs/zoominfo.png";
 import Lusha from "@/public/assets/SVGs/Quadrant1/lusha.png";
+import lusha from "@/public/assets/PNGs/lusha_second.png";
 
 const Quadrant1 = (props: any, ref: any) => (
   <motion.div
@@ -31,10 +35,10 @@ const Quadrant1 = (props: any, ref: any) => (
     }}
   >
     <Image
-      src={Apollo}
+      src={apollo}
       alt="Apollo"
       title="Apollo"
-      className="absolute h-[97px] w-[97px] top-[20%] right-[30%]"
+      className="absolute h-[113px] w-[113px] top-[20%] right-[30%]"
     />
     <Image
       src={Outlook}
@@ -42,23 +46,29 @@ const Quadrant1 = (props: any, ref: any) => (
       title="Outlook"
       className="absolute h-[75px] w-[75px] top-[40%] right-[70%] rounded-full shadow-md"
     />
-    <div
-      className="absolute top-[28%] right-[3%] h-fit w-fit rounded-full"
+    {/* <div
+      className=" h-fit w-fit rounded-full p-0 shadow-md"
       title="Linkedin"
-    >
-      <Linkedin size="108px" />
-    </div>
+    > */}
     <Image
-      src={Zoominfo}
-      alt="Zoominfo"
-      title="Zoominfo"
-      className="absolute h-[85px] w-[85px] p-2 rounded-full shadow-md top-[60%] right-[30%]"
+      src={Lkd}
+      alt="Linkedin"
+      className="w-[108px] h-[108px] absolute top-[28%] right-[3%]"
     />
+    {/* </div> */}
+    {/* <div className="absolute flex items-center justify-center h-[121px] w-[121px] shadow-md bg-white border rounded-full top-[60%] right-[30%] "> */}
+      <Image
+        src={Zoom}
+        alt="Zoominfo"
+        title="Zoominfo"
+        className="absolute h-[121px] w-[121px] top-[60%] right-[35%] "
+      />
+    {/* </div> */}
     <Image
-      src={Lusha}
+      src={lusha}
       alt="Lusha"
       title="Lusha"
-      className="absolute h-[74px] w-[74px] top-[53%] right-[55%] rounded-full"
+      className="absolute h-[85px] w-[85px] top-[61%] right-[55%] rounded-full"
     />
   </motion.div>
 );

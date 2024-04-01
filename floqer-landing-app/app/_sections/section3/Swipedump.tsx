@@ -198,7 +198,19 @@ const SwipeDump = () => {
             className="wall-comment wall-comment-prev swiper-slide"
           >
             <div className="wall-comment-inner">
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`“`}</span>
+              {/* <svg
+                width="32"
+                height="26"
+                viewBox="0 0 32 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.6578 24.368C20.8471 24.8373 20.1218 24.7093 19.4818 23.984C18.7991 23.3013 18.7778 22.64 19.4178 22C20.4418 20.9333 21.1458 20.208 21.5298 19.824C21.8711 19.44 22.2125 18.9493 22.5538 18.352C22.8951 17.7547 23.0871 17.1573 23.1298 16.56C23.2151 15.536 22.9165 15.024 22.2338 15.024C20.8685 15.024 19.6951 14.4053 18.7138 13.168C17.7325 11.9307 17.2418 10.3733 17.2418 8.496C17.2418 6.23467 17.9031 4.4 19.2258 2.992C20.5058 1.62667 22.2338 0.944002 24.4098 0.944002C26.4578 0.944002 28.2285 1.712 29.7218 3.248C31.2151 4.784 31.9618 6.87467 31.9618 9.52C31.9618 15.3653 28.5271 20.3147 21.6578 24.368ZM4.8258 24.368C4.01514 24.8373 3.2898 24.7093 2.6498 23.984C1.96714 23.3013 1.9458 22.64 2.5858 22C3.6098 20.9333 4.3138 20.208 4.6978 19.824C5.03914 19.44 5.38047 18.9493 5.7218 18.352C6.06314 17.7547 6.25514 17.1573 6.2978 16.56C6.38314 15.536 6.08447 15.024 5.4018 15.024C4.03647 15.024 2.86314 14.4053 1.8818 13.168C0.900469 11.9307 0.409801 10.3733 0.409801 8.496C0.409801 6.23467 1.07114 4.4 2.3938 2.992C3.6738 1.62667 5.4018 0.944002 7.5778 0.944002C9.6258 0.944002 11.3965 1.712 12.8898 3.248C14.3831 4.784 15.1298 6.87467 15.1298 9.52C15.1298 15.3653 11.6951 20.3147 4.8258 24.368Z"
+                  fill="#8870C5"
+                />
+              </svg> */}
               <span className="text-3xl font-secondary text-secondary font-semibold mt-[-1rem]">
                 What would take me three weeks, Floqer did in 3 mins.
               </span>
@@ -209,7 +221,7 @@ const SwipeDump = () => {
                 able to generate emails for an ICP in a matter of minutes using
                 my tone and voice...
               </div>
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`"`}</span>
+              <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`“`}</span>
               <div className="wall-comment-user">
                 {/* <Image
                   alt=""
@@ -222,8 +234,8 @@ const SwipeDump = () => {
                 /> */}
 
                 <div>
-                  <div className="wall-comment-user-name">Uday Parmar</div>
-                  <div className="wall-comment-user-title">Sales Leader</div>
+                  <div className="wall-comment-user-name">Nathan Conway</div>
+                  <div className="wall-comment-user-title">Leader</div>
                 </div>
               </div>
             </div>
@@ -254,8 +266,10 @@ const SwipeDump = () => {
                 /> */}
 
                 <div>
-                  <div className="wall-comment-user-name">Pulkit Jaiswal</div>
-                  <div className="wall-comment-user-title">Sales Leader</div>
+                  <div className="wall-comment-user-name">Joshua Francois</div>
+                  <div className="wall-comment-user-title">
+                    Senior Manager, Sales
+                  </div>
                 </div>
               </div>
             </div>

@@ -51,7 +51,7 @@ export const faqs = [
   {
     question: "How does AI and GPT-4 work within Floqer?",
     answer:
-      "AI is only as powerful as the data that powers it. We understand that approaching each prospect needs a tailored process, and specific messaging. We use AI, not just to create specific outbound messaging for each prospect, but also to make decisions on which process to close the most meetings.",
+      "AI is only as powerful as the data that powers it. We understand that approaching each prospect needs a tailored process, and specific messaging. We use AI, not just to create specific outbound messaging for each prospect, but also to make decisions on which process to follow to close the most meetings.",
   },
   {
     question: "Can Floqer be customized to fit my sales process?",

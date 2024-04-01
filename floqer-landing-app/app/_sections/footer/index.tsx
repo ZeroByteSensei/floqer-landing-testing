@@ -18,7 +18,7 @@ const Footer = () => {
         <header className="font-semibold text-primary text-2xl font-secondary">floqer</header>
         <div className="w-px bg-gray-100 h-[24px]"></div>
         <span className="text-[#625E6F] text-base">
-          Supercharge your outbound team © 2024 Floqer.ai
+          Supercharge your sales motion © 2024 Floqer.ai
         </span>
       </section>
       <section className="flex flex-col items-center md:items-start md:flex-row md:justify-between w-full gap-4">

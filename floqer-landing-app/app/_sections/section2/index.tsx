@@ -31,7 +31,7 @@ const Section2 = () => {
         whileInView={{ opacity: 1, translateY: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.2, ease: "easeOut" }}
-        className="text-6xl font-medium"
+        className="text-6xl font-medium text-secondary"
       >
         Your go-to sales tools
       </motion.header>

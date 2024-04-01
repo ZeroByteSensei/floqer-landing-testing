@@ -5,10 +5,13 @@ import { AnimationControls, motion } from "framer-motion";
 import Instantly from "@/public/assets/SVGs/Quadrant3/Instantly.svg";
 import Instant from "@/public/assets/PNGs/instantly.png"
 import Twitter from "@/public/assets/SVGs/Quadrant3/x-social-media.svg";
+import twitter from "@/public/assets/PNGs/twitter.png"
 import Sendgrid from "@/public/assets/SVGs/Quadrant3/sendgrid.svg";
+import send from "@/public/assets/PNGs/sendgrid.png"
 import Crunchbase from "@/public/assets/SVGs/Quadrant3/crunchbase.svg";
 import Crunch from "@/public/assets/PNGs/crunchbase.png"
 import ProxyCurl from "@/public/assets/SVGs/Quadrant3/ProxyCurl.jpeg";
+import proxy from "@/public/assets/PNGs/proxy.png"
 import Outreach from "@/public/assets/SVGs/Quadrant3/Outreach.svg";
 import Out from "@/public/assets/PNGs/outreach.png"
 
@@ -51,16 +54,16 @@ const Quadrant3 = ({ controls }: Props) => {
         className="absolute w-[82px] h-[82px] right-[25%] top-[58%]"
       />
       <Image
-        src={Twitter}
+        src={twitter}
         alt="Twitter"
         title="Twitter"
-        className="absolute w-[101px] h-[101px] rounded-full right-[50%] top-[45%]"
+        className="absolute w-[198px] h-[145px] right-[50%] top-[45%]"
       />
       <Image
-        src={Sendgrid}
+        src={send}
         alt="Sendgrid"
         title="Sendgrid"
-        className="absolute w-[101px] h-[101px] rounded-full right-[48%] top-[7%]"
+        className="absolute w-[116px] h-[116px] right-[48%] top-[7%]"
       />
       <div className="absolute right-[30%] top-[24%]">
         <Image
@@ -71,10 +74,10 @@ const Quadrant3 = ({ controls }: Props) => {
         />
       </div>
       <Image
-        src={ProxyCurl}
+        src={proxy}
         alt="ProxyCurl"
         title="ProxyCurl"
-        className="absolute w-[54px] h-[54px] rounded-full top-[19%] right-[74%]"
+        className="absolute w-[62px] h-[61px] top-[19%] right-[74%]"
       />
       <Image
         src={Out}

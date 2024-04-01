@@ -5,9 +5,14 @@ import Image from "next/image";
 import Salesforce from "@/public/assets/SVGs/Quadrant2/salesforce.svg";
 import OpenAi from "@/public/assets/SVGs/Quadrant2/openai.svg";
 import Pipedrive from "@/public/assets/SVGs/Quadrant2/pipedrive.svg";
+import Pipe from "@/public/assets/PNGs/pipedrive.png"
 import SalesNav from "@/public/assets/SVGs/Quadrant2/sales_navigator.svg";
+import Nav from "@/public/assets/PNGs/navigator.png"
 import Redwolf from "@/public/assets/SVGs/Quadrant2/RedWolf.png";
+import Openai from "@/public/assets/PNGs/openai.png"
+import Red from "@/public/assets/PNGs/RedWolf_second.png"
 import Kaspr from "@/public/assets/SVGs/Quadrant2/Kaspr.jpeg";
+import kaspr from "@/public/assets/PNGs/kaspr.png"
 
 interface Props {
   controls: AnimationControls;
@@ -44,34 +49,34 @@ const Quadrant2 = ({ controls }: Props) => {
         className=" absolute p-2 rounded-full shadow-lg w-[96px] h-[96px] top-[32%] left-[1%]"
       />
       <Image
-        src={OpenAi}
+        src={Openai}
         alt="Openai"
         title="OpenAI"
-        className=" absolute p-2 rounded-full shadow-lg w-[95px] h-[95px] top-[20%] left-[45%] bg-black"
+        className=" absolute w-[109px] h-[109px] top-[20%] left-[45%]"
       />
       <Image
-        src={Pipedrive}
+        src={Pipe}
         alt="Pipedrive"
         title="Pipedrive"
-        className=" absolute p-2 rounded-full shadow-lg w-[57px] h-[57px] top-[35%] left-[67%] bg-white"
+        className=" absolute w-[66px] h-[66px] top-[35%] left-[67%]"
       />
       <Image
-        src={SalesNav}
+        src={Nav}
         alt="SalesNav"
         title="SalesNav"
-        className=" absolute p-2 rounded-full shadow-lg w-[110px] h-[110px] bottom-[1%] right-[35%] bg-white"
+        className=" absolute w-[110px] h-[110px] bottom-[1%] right-[35%]"
       />
       <Image
-        src={Redwolf}
+        src={Red}
         alt="Hunter.Io"
         title="Hunter.Io"
-        className="absolute rounded-full w-[52px] h-[52px] top-[45%] left-[25%] bg-white"
+        className="absolute rounded-full w-[60px] h-[60px] top-[45%] left-[25%] bg-white"
       />
       <Image
-        src={Kaspr}
+        src={kaspr}
         alt="Kaspr"
         title="Kaspr"
-        className="absolute rounded-full w-[76px] h-[76px] top-[65%] left-[35%] bg-white"
+        className="absolute w-[88px] h-[88px] top-[65%] left-[35%]"
       />
     </motion.div>
   );

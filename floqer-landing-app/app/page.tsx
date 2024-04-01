@@ -80,7 +80,10 @@ const Page = () => {
           </section>
         </section>
       </div>
-      <ScrollSection />
+      <div className="">
+        <ScrollSection />
+      </div>
+
       <Section2 />
       {/* <div className="relative">
         <div className="absolute inset-0 h-full z-0">
@@ -91,7 +94,7 @@ const Page = () => {
           <Section4 />
         </div>
       </div> */}
-      <div ref={wrapperRef} className="sticky inset-0">
+      <div ref={wrapperRef} className="">
         <Section3 />
       </div>
       <div ref={lowerRef} className="relative bg-white pb-4 md:pb-12 lg:pb-24 ">
