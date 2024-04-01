@@ -13,7 +13,7 @@ import Disclaimer from "./Disclaimer";
 
 const Footer = () => {
   return (
-    <div className="p-4 md:p-12 lg:p-24 flex flex-col items-center md:items-start justify-center gap-6">
+    <div className="bg-white p-4 md:p-12 lg:p-24 flex flex-col items-center md:items-start justify-center gap-6">
       <section className="flex gap-4 items-center h-fit">
         <header className="font-semibold text-primary text-2xl font-secondary">floqer</header>
         <div className="w-px bg-gray-100 h-[24px]"></div>

@@ -18,18 +18,35 @@ import { motion } from "framer-motion";
 const Page = () => {
   const wrapperRef = React.useRef<HTMLDivElement>(null);
   const lowerRef = React.useRef<HTMLDivElement>(null);
+  const [reachedTop, setReachedTop] = React.useState(false);
+
+  // useEffect(() => {
+  //   console.log("reachedtop --> ", reachedTop)
+  // }, [reachedTop])
 
   // useEffect(() => {
   //   if (!wrapperRef.current) return;
   //   const listener = () => {
   //     const topPos = wrapperRef.current?.getBoundingClientRect().top;
+  //     // console.log("toppos --> ", topPos)
+  //     let done = false;
   //     if(topPos && topPos <= 0) {
-  //       console.log("-------------Top reached-------------");
+  //       // console.log("reached the top, reachedtop --> ", reachedTop)
+  //       // setReachedTop(() => true);
+  //       wrapperRef.current.classList.remove("sticky");
+  //       wrapperRef.current.classList.add("sticky");
+  //       done = true;
+  //     } else if(topPos && topPos > 0) {
+  //       // console.log("reached above the top, reachedtop --> ,", reachedTop)
+  //       // setReachedTop(() => false);
+  //       // console.log("reachedtop --> ", reachedTop)
+  //       done = false;
+  //       console.log("-------------Top not reached-------------");
   //     }
   //   };
   //   document.addEventListener("scroll", listener);
   //   return () => document.removeEventListener("scroll", listener);
-  // }, [wrapperRef.current]);
+  // }, []);
 
   // useEffect(() => {
   //   if(!lowerRef.current) return;
@@ -45,14 +62,16 @@ const Page = () => {
   // }, [lowerRef.current])
 
   return (
-    <div className="">
+    <div className="bg-white">
       <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
       <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-4">
         <div className="max-w-[2700px] mx-auto mb-4 md:mb-12">
           <Section1 />
         </div>
         <section className="w-full flex flex-col items-center justify-center gap-4 font-secondary">
-          <header className="text-3xl text-secondary" >Loved by folks from</header>
+          <header className="text-3xl text-secondary">
+            Loved by folks from
+          </header>
           <section className="flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-12 items-center justify-center">
             <Deel color="#51407D" />
             <Zoominfo color="#51407D" />
@@ -72,14 +91,14 @@ const Page = () => {
           <Section4 />
         </div>
       </div> */}
-      <div ref={wrapperRef} className="">
+      <div ref={wrapperRef} className="sticky inset-0">
         <Section3 />
       </div>
-      <div ref={lowerRef} >
-      <Section4 />
+      <div ref={lowerRef} className="relative bg-white pb-4 md:pb-12 lg:pb-24 ">
+        <Section4 />
       </div>
       <Section5 />
-      <div className="max-w-[2700px] mx-auto">
+      <div className="max-w-[2700px] mx-auto relative">
         <Footer />
       </div>
     </div>

@@ -3,11 +3,14 @@
 import React from "react";
 import { AnimationControls, motion } from "framer-motion";
 import Instantly from "@/public/assets/SVGs/Quadrant3/Instantly.svg";
+import Instant from "@/public/assets/PNGs/instantly.png"
 import Twitter from "@/public/assets/SVGs/Quadrant3/x-social-media.svg";
 import Sendgrid from "@/public/assets/SVGs/Quadrant3/sendgrid.svg";
 import Crunchbase from "@/public/assets/SVGs/Quadrant3/crunchbase.svg";
+import Crunch from "@/public/assets/PNGs/crunchbase.png"
 import ProxyCurl from "@/public/assets/SVGs/Quadrant3/ProxyCurl.jpeg";
 import Outreach from "@/public/assets/SVGs/Quadrant3/Outreach.svg";
+import Out from "@/public/assets/PNGs/outreach.png"
 
 import Image from "next/image";
 
@@ -42,10 +45,10 @@ const Quadrant3 = ({ controls }: Props) => {
       }}
     >
       <Image
-        src={Instantly}
+        src={Instant}
         alt="Instantly"
         title="Instantly"
-        className="absolute w-[71px] h-[71px] rounded-full right-[25%] top-[58%]"
+        className="absolute w-[82px] h-[82px] right-[25%] top-[58%]"
       />
       <Image
         src={Twitter}
@@ -59,12 +62,12 @@ const Quadrant3 = ({ controls }: Props) => {
         title="Sendgrid"
         className="absolute w-[101px] h-[101px] rounded-full right-[48%] top-[7%]"
       />
-      <div className="absolute shadow-lg p-3 rounded-full right-[30%] top-[24%]">
+      <div className="absolute right-[30%] top-[24%]">
         <Image
-          src={Crunchbase}
+          src={Crunch}
           alt="Crunchbase"
           title="Crunchbase"
-          className="w-[45px] h-[45px] "
+          className="w-[58px] h-[58px] "
         />
       </div>
       <Image
@@ -74,10 +77,10 @@ const Quadrant3 = ({ controls }: Props) => {
         className="absolute w-[54px] h-[54px] rounded-full top-[19%] right-[74%]"
       />
       <Image
-        src={Outreach}
+        src={Out}
         alt="Outreach"
         title="Outreach"
-        className="absolute w-[76px] h-[76px] p-3 bg-[#5952ff] rounded-full top-[47%] right-[1%]"
+        className="absolute w-[87px] h-[87px] top-[47%] right-[1%]"
       />
     </motion.div>
   );

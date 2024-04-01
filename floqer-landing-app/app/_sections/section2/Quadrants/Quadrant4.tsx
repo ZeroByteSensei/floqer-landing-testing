@@ -7,6 +7,7 @@ import Image from "next/image";
 import Claude from "@/public/assets/SVGs/Quadrant4/claude.svg";
 import Hubspot from "@/public/assets/SVGs/Quadrant4/hubspot.svg";
 import Phantom from "@/public/assets/SVGs/Quadrant4/phantomSVG.svg";
+import PhantomBuster from "@/public/assets/PNGs/phantombuster.png"
 import BlueD from "@/public/assets/SVGs/Quadrant4/BlueD.png";
 
 interface Props {
@@ -52,10 +53,10 @@ const Quadrant4 = ({ controls }: Props) => {
         className="absolute rounded-full w-[99px] h-[99px] top-[27%] left-[38%]"
       />
       <Image
-        src={Phantom}
-        alt="Phantom"
-        title="Phantom"
-        className="absolute rounded-full w-[70px] h-[70px] bg-[#5ec7df] top-[43%] left-[64%]"
+        src={PhantomBuster}
+        alt="PhantomBuster"
+        title="PhantomBuster"
+        className="absolute rounded-full w-[80px] h-[80px] top-[43%] left-[64%]"
       />
       <Image
         src={BlueD}

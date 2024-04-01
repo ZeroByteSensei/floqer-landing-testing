@@ -40,7 +40,7 @@ const Quadrant1 = (props: any, ref: any) => (
       src={Outlook}
       alt="Outlook"
       title="Outlook"
-      className="absolute h-[53px] w-[50px] top-[40%] right-[70%] rounded-full p-2 shadow-md"
+      className="absolute h-[75px] w-[75px] top-[40%] right-[70%] rounded-full shadow-md"
     />
     <div
       className="absolute top-[28%] right-[3%] h-fit w-fit rounded-full"

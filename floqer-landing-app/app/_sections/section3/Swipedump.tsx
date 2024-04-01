@@ -211,7 +211,7 @@ const SwipeDump = () => {
               </div>
               <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`"`}</span>
               <div className="wall-comment-user">
-                <Image
+                {/* <Image
                   alt=""
                   decoding="async"
                   height="1"
@@ -219,7 +219,7 @@ const SwipeDump = () => {
                   src="/build/q-4fc1b8c1.png"
                   width="1"
                   className="lazy-image lazy-image-hidden"
-                />
+                /> */}
 
                 <div>
                   <div className="wall-comment-user-name">Uday Parmar</div>
@@ -243,7 +243,7 @@ const SwipeDump = () => {
               </div>
               <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`"`}</span>
               <div className="wall-comment-user">
-                <Image
+                {/* <Image
                   alt="Amber Stone avatar"
                   decoding="async"
                   height="1"
@@ -251,7 +251,7 @@ const SwipeDump = () => {
                   src="/build/q-c2091d28.png"
                   width="1"
                   className="lazy-image lazy-image-hidden"
-                />
+                /> */}
 
                 <div>
                   <div className="wall-comment-user-name">Pulkit Jaiswal</div>
@@ -275,7 +275,7 @@ const SwipeDump = () => {
               </div>
               <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
               <div className="wall-comment-user mt-[-0.75rem]">
-                <Image
+                {/* <Image
                   alt="Drew White avatar"
                   decoding="async"
                   height="1"
@@ -283,7 +283,7 @@ const SwipeDump = () => {
                   src="/build/q-cda24473.png"
                   width="1"
                   className="lazy-image lazy-image-hidden"
-                />
+                /> */}
 
                 <div>
                   <div className="wall-comment-user-name">Vishal Makwana</div>
@@ -308,7 +308,7 @@ const SwipeDump = () => {
               </div>
               <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
               <div className="wall-comment-user">
-                <Image
+                {/* <Image
                   alt="Brendan McDonald avatar"
                   decoding="async"
                   height="1"
@@ -316,7 +316,7 @@ const SwipeDump = () => {
                   src="/build/q-4fc1b8c1.png"
                   width="1"
                   className="lazy-image lazy-image-hidden"
-                />
+                /> */}
 
                 <div>
                   <div className="wall-comment-user-name">Arjun R. Krishna</div>
