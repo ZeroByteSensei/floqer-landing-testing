@@ -42,7 +42,7 @@ const Stat = ({ val, metric, description, num2, num1 }: Props) => {
           ref={statRef}
           className="font-bold text-8xl text-secondary font-secondary"
         ></span>
-        <span className="text-[#9077D2]">{metric}</span>
+        <span className="text-[#9077D2] mb-4">{metric}</span>
       </div>
       <span className="text-sm font-light text-[#11244A] text-center">
         {description}

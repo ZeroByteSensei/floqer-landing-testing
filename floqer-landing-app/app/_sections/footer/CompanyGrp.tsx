@@ -2,29 +2,32 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const arr = [
-  "Feature requests",
-  "Terms of Service",
-  "Privacy Policy",
-  "Opt out",
-];
+const arr = ["Feature requests", "Terms of Service", "Privacy Policy"];
+
+const links = ["", "/terms_of_service", "/privacy_policy"];
 
 const ProductGrp = () => {
   return (
     <div className="flex flex-col gap-4 w-36">
       <span className="font-bold text-secondary">Company</span>
       <div className="flex flex-col gap-2 text-gray-500">
-        {arr.map((itr) => (
-          <motion.span
+        {arr.map((itr, idx) => (
+          <motion.a
             key={itr}
             // initial={{ color: "#000" }}
+            href={links[idx]}
             style={{ originX: 0 }}
-            whileHover={{ color: "#51407D", scale: 1.1 }}
+            target="_blank"
+            whileHover={{
+              color: "#51407D",
+              scale: 1.1,
+              textDecoration: "underline",
+            }}
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="cursor-pointer"
           >
             {itr}
-          </motion.span>
+          </motion.a>
         ))}
       </div>
     </div>

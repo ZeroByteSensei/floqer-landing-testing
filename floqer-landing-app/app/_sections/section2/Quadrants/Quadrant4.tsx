@@ -62,8 +62,8 @@ const Quadrant4 = ({ controls }: Props) => {
       />
       <Image
         src={BlueD}
-        alt="BlueD"
-        title="BlueD"
+        alt="Datagma"
+        title="Datagma"
         className="absolute rounded-full w-[46px] h-[46px] top-[23%] left-[74%]"
       />
     </motion.div>

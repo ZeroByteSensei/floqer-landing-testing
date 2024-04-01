@@ -80,7 +80,7 @@ const Page = () => {
           </section>
         </section>
       </div>
-      <div className="">
+      <div className="" id="how-it-works" >
         <ScrollSection />
       </div>
 
@@ -97,11 +97,11 @@ const Page = () => {
       <div ref={wrapperRef} className="">
         <Section3 />
       </div>
-      <div ref={lowerRef} className="relative bg-white pb-4 md:pb-12 lg:pb-24 ">
+      <div id="faqs" ref={lowerRef} className="relative bg-white pb-4 md:pb-12 lg:pb-24 ">
         <Section4 />
       </div>
       <Section5 />
-      <div className="max-w-[2700px] mx-auto relative">
+      <div id="contact-us" className="max-w-[2700px] mx-auto relative">
         <Footer />
       </div>
     </div>

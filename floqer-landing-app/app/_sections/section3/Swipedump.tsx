@@ -221,7 +221,10 @@ const SwipeDump = () => {
                 able to generate emails for an ICP in a matter of minutes using
                 my tone and voice...
               </div>
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`“`}</span>
+              <span
+                className="text-7xl text-[#8F76D1] font-secondary font-bold"
+                style={{ lineHeight: 0.8 }}
+              >{`”`}</span>
               <div className="wall-comment-user">
                 {/* <Image
                   alt=""
@@ -246,14 +249,17 @@ const SwipeDump = () => {
             className="wall-comment wall-comment-active swiper-slide"
           >
             <div className="wall-comment-inner">
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`“`}</span>
               <span className="text-3xl font-secondary text-secondary font-semibold mt-[-1rem]">
                 Response rate was 2X normal!
               </span>
               <div className="wall-comment-content">
                 {`Referred you to a few friends that will be trying it out :) We just finished the campaign with the initial 1,600 leads and the results were very conclusive! Response rate was 2X normal.`}
               </div>
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold">{`"`}</span>
+              <span
+                className="text-7xl text-[#8F76D1] font-secondary font-bold"
+                style={{ lineHeight: 0.8 }}
+              >{`”`}</span>
               <div className="wall-comment-user">
                 {/* <Image
                   alt="Amber Stone avatar"
@@ -280,14 +286,17 @@ const SwipeDump = () => {
             className="wall-comment wall-comment-next swiper-slide"
           >
             <div className="wall-comment-inner">
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`“`}</span>
               <span className="text-3xl font-secondary text-secondary font-semibold mt-[-1rem]">
                 {`Anyone who isn't using tech like Floqer’s are going to fall behind.`}
               </span>
               <div className="wall-comment-content">
                 {`My favourite part about how advanced automated email and messaging is becoming is the fact that we're not only automating the writing part, but the reading too!`}
               </div>
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span
+                className="text-7xl text-[#8F76D1] font-secondary font-bold "
+                style={{ lineHeight: 0.8 }}
+              >{`”`}</span>
               <div className="wall-comment-user mt-[-0.75rem]">
                 {/* <Image
                   alt="Drew White avatar"
@@ -313,14 +322,17 @@ const SwipeDump = () => {
             className="wall-comment wall-comment-next swiper-slide wall-comment-hidden"
           >
             <div className="wall-comment-inner">
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`“`}</span>
               <span className="text-3xl font-secondary text-secondary font-semibold mt-[-1rem]">
                 THE premium sales automation tool around
               </span>
               <div className="wall-comment-content">
                 {`“I was sceptical at first about how an AI tool could understand the nuances or the different tasks involved in our sales cycle. But I've been pleasantly surprised! The automations are rather easy to learn, and use, allowing me to actually focus on what matters, SELLING!”`}
               </div>
-              <span className="text-7xl text-[#8F76D1] font-secondary font-bold pb-[-1rem]">{`"`}</span>
+              <span
+                className="text-7xl text-[#8F76D1] font-secondary font-bold"
+                style={{ lineHeight: 0.8 }}
+              >{`”`}</span>
               <div className="wall-comment-user">
                 {/* <Image
                   alt="Brendan McDonald avatar"

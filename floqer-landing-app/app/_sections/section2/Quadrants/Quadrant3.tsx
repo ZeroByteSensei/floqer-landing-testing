@@ -56,7 +56,7 @@ const Quadrant3 = ({ controls }: Props) => {
       <Image
         src={twitter}
         alt="Twitter"
-        title="Twitter"
+        title="Twitter (X)"
         className="absolute w-[198px] h-[145px] right-[50%] top-[45%]"
       />
       <Image

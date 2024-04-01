@@ -26,7 +26,7 @@ const Section3 = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
             className="font-medium text-5xl lg:text-6xl font-secondary items-center justify-center"
           >
-            <span className="text-[#9A7FE1]" >{"You're in "}</span>{" "}
+            <span className="text-[#9A7FE1]">{"You're in "}</span>{" "}
             <span>{"good company"}</span>
           </motion.h1>
           {/* <p className="text-center">{"You don't have to trust our word"}</p> */}
@@ -45,25 +45,25 @@ const Section3 = () => {
           >
             <FiChevronRight />
           </Button> */}
-          <div className="hidden xl:block" ><SwipeDump /></div>
-          
-
+          <div className="hidden xl:block">
+            <SwipeDump />
+          </div>
         </section>
-        <section className="w-full max-w-[90vw] flex flex-col sm:flex-row items-center md:items-start justify-center gap-4 h-fit mt-4 md:mt-12">
+        <section className="w-full max-w-[90vw] flex flex-col sm:flex-row items-center md:items-start justify-center gap-8 h-fit mt-4 md:mt-12">
           <Stat
             val={200}
             metric="%"
             description="more deals closed by sales teams using Floqer to automate their sales process."
             num1
           />
-          <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
+          <div className="h-px w-[85px] sm:h-[85px] sm:w-px bg-gray-300" />
           <Stat
             val={12}
             metric="hrs"
             description="average time saved per week/SDR in manual work such as data entry, research and logging"
             num2={true}
           />
-          <div className="h-px w-[85px] md:h-[85px] md:w-px bg-gray-300" />
+          <div className="h-px w-[85px] sm:h-[85px] sm:w-px bg-gray-300" />
           <Stat
             val={15}
             metric="mins"

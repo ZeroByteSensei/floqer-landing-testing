@@ -25,7 +25,7 @@ const Section2 = () => {
   }, [controls, isInView]);
 
   return (
-    <section className="hidden lg:flex relative flex-col items-center justify-center h-screen font-semibold  mb-4 md:mb-12 lg:mb-24 font-secondary max-h-[776px]">
+    <section id="integrations" className="hidden lg:flex relative flex-col items-center justify-center h-screen font-semibold  mb-4 md:mb-12 lg:mb-24 font-secondary max-h-[776px]">
       <motion.header
         initial={{ opacity: 0, translateY: "10px" }}
         whileInView={{ opacity: 1, translateY: 0 }}

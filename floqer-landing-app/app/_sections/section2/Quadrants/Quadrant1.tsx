@@ -52,7 +52,8 @@ const Quadrant1 = (props: any, ref: any) => (
     > */}
     <Image
       src={Lkd}
-      alt="Linkedin"
+      alt="LinkedIn"
+      title="LinkedIn"
       className="w-[108px] h-[108px] absolute top-[28%] right-[3%]"
     />
     {/* </div> */}

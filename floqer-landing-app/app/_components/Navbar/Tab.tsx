@@ -2,11 +2,12 @@ import React from 'react'
 
 interface Props {
   val: string;
+  link: string;
 }
 
-const Tab = ({ val }: Props) => {
+const Tab = ({ val, link }: Props) => {
   return (
-    <div  >{val}</div>
+    <a href={link} >{val}</a>
   )
 }
 

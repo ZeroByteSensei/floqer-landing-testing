@@ -104,7 +104,7 @@ export const StickyScroll = ({
                 ease: "linear",
               }}
               className={cn(
-                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[15vh] overflow-hidden",
+                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[25%] overflow-hidden",
                 contentClassName
               )}
             >

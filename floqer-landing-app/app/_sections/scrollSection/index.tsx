@@ -36,7 +36,7 @@ const content = [
       </div>
     ),
     description:
-      "Choose from a list of actions 50+ leading sales tools and drop them into our visual builder to start building your custom sales flow.",
+      "Replicate or level up your sales process by adding custom logic, and conditions where needed.",
     content: <Image src={Second} alt="Demo" className="w-[821px]" />,
   },
   {
