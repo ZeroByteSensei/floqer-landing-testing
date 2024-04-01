@@ -1025,8 +1025,10 @@ button.swiper-pagination-bullet {
 }
 
 .wall-comments {
-  width: 684px;
-  height: 280px;
+  width: 878px;
+  height: 383px;
+  max-width: 90vw;
+  max-height: 90vh;
   margin: 0 auto;
   z-index: 4;
   position: relative;
@@ -1107,7 +1109,8 @@ button.swiper-pagination-bullet {
 }
 
 .wall-comment-user-name {
-  font-weight: 500;
+  font-weight: 700;
+  color: #3E1953;
 }
 
 .wall-comment-user-title {
@@ -1117,6 +1120,7 @@ button.swiper-pagination-bullet {
 
 .wall-comment {
   padding: 40px 48px;
+  padding: 3rem;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 0 1px #0e3b650a, 0 1px 1px #0e3b650a, 0 3px 3px #0e3b6508,
@@ -1144,11 +1148,12 @@ button.swiper-pagination-bullet {
 
 .wall-comment-content {
   color: var(--the-problem-colors-text);
+  color: #6C6C6C;
   /* font-family: Britti Sans, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue,
     sans-serif; */
-  font-family: AirbnbCereal, sans-serif !important;
-  font-size: 22px;
+  /* font-family: AirbnbCereal, sans-serif !important; */
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 }

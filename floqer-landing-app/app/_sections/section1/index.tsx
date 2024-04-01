@@ -25,19 +25,17 @@ const Flow = () => {
       <section className="flex flex-col items-center gap-4 sm:gap-12 pt-4 relative">
         <Navbar />
         <section className="flex flex-col md:flex-row items-start justify-between p-6 lg:p-12 w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
-          <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px]">
-            <h1 className="font-secondary text-6xl text-[#51407D]">
-              Not just another sales tool,
+          <div className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px] text-7xl">
+            <h1 className="font-secondary text-[#8A72CA]">
+              All in one tool to put your
             </h1>
-            <h1 className="font-secondary font-semibold text-6xl text-[#51407D]">
-              all the sales tools
+            <h1 className="font-secondary  text-[#51407D]">
+              sales process on autopilot
             </h1>
-            <span className="font-light text-base w-full md:w-4/5">
-              Help your GTM team land more meetings. Combine 50+ data sources,
-              web scraping, and AI messaging to enrich your data and automate
-              your outbound at scale.
+            <span className="font-light text-base w-full md:w-[95%]">
+            Help your sales team drive more revenue by landing more meetings. Build workflows combining 50+ industry-leading data sources, web scraping, AI-driven automations and messaging to enrich your data and automate your outbound at scale.
             </span>
-            <Button className=" bg-black text-white">Request a demo</Button>
+            <Button className=" bg-secondary text-white">Get started now</Button>
           </div>
           <section className="flex flex-1 flex-col items-start gap-2">
             {/* <FlowTemplate

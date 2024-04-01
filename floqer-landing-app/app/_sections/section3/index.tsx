@@ -24,12 +24,12 @@ const Section3 = () => {
             }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="font-bold text-5xl lg:text-6xl font-secondary flex flex-col items-center justify-center"
+            className="font-medium text-5xl lg:text-6xl font-secondary items-center justify-center"
           >
-            <span>{"You're in "}</span>
+            <span className="text-[#9A7FE1]" >{"You're in "}</span>{" "}
             <span>{"good company"}</span>
           </motion.h1>
-          <p className="text-center">{"You don't have to trust our word"}</p>
+          {/* <p className="text-center">{"You don't have to trust our word"}</p> */}
         </section>
         <section className="w-full flex items-center justify-center gap-8">
           {/* <Button

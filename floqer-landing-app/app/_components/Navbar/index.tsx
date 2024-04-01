@@ -43,7 +43,7 @@ const index = () => {
       >
         Request a demo
       </motion.button> */}
-      <Button className=" bg-black text-white">Request a demo</Button>
+      <Button className=" bg-secondary text-white">Get started now</Button>
     </motion.nav>
   );
 };

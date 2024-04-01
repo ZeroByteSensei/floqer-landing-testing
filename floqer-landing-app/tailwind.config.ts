@@ -37,7 +37,7 @@ const config: Config = {
         tertiary: "#E8A496"
       },
       fontFamily: {
-        primary: "AirbnbCereal, sans-serif !important",
+        // primary: "AirbnbCereal, sans-serif !important",
         secondary: "Recoleta, sans-serif !important", 
       }
     },
