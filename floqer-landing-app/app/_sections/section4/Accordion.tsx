@@ -32,7 +32,7 @@ export default function FAQ() {
           }
           // indicator={<FaPlus />}
         >
-          <span className="font-light">{itr.answer}</span>
+          <span className="">{itr.answer}</span>
         </AccordionItem>
       ))}
       {/* <AccordionItem

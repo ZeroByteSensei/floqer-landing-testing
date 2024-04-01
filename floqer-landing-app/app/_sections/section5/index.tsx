@@ -12,9 +12,9 @@ const Section5 = () => {
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
-          particleDensity={30}
+          particleDensity={50}
           className="w-full h-full"
-          particleColor="#FFFFFF"
+          particleColor="#8660a6"
         />
       </div>
       <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#aea8f9] from-30% via-[#dcbef9] via-45% to-[#f5c4cc] to-70% bg-clip-text text-6xl md:text-7xl text-transparent font-secondary">

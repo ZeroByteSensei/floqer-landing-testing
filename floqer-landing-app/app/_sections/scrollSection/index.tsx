@@ -7,37 +7,59 @@ import React, { useEffect, useState } from "react";
 // import Frame2 from "@/public/assets/SVGs/scrollsection/frame2.svg";
 // import Frame3 from "@/public/assets/SVGs/scrollsection/frame3.svg";
 // import Frame4 from "@/public/assets/SVGs/scrollsection/frame4.svg";
-import First from "@/public/assets/SVGs/section2/first.svg"
-import Second from "@/public/assets/SVGs/section2/second.svg"
-import Third from "@/public/assets/SVGs/section2/third.svg"
+import First from "@/public/assets/SVGs/section2/first.svg";
+import Second from "@/public/assets/SVGs/section2/second.svg";
+import Third from "@/public/assets/SVGs/section2/third.svg";
 
 const content = [
   {
-    title: "Enrich lead list</>",
+    title: (
+      <div className="flex flex-col text-secondary font-normal text-5xl">
+        <span>
+          <span className="font-medium">Drag and drop </span>
+          <span>tools</span>
+        </span>
+        <span>into your workflow</span>
+      </div>
+    ),
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Choose from a list of actions 50+ leading sales tools and drop them into our visual builder to start building your custom sales flow.",
     content: <Image src={First} alt="Demo" className="" />,
   },
   {
-    title: "Real time changes",
+    title: (
+      <div className="flex flex-col text-secondary font-normal text-5xl">
+        <span>
+          <span className="font-medium">Turn your integrations</span>
+        </span>
+        <span>into an automation</span>
+      </div>
+    ),
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Choose from a list of actions 50+ leading sales tools and drop them into our visual builder to start building your custom sales flow.",
     content: <Image src={Second} alt="Demo" className="w-[821px]" />,
   },
   {
-    title: "Version control",
+    title: (
+      <div className="flex flex-col text-secondary font-normal text-5xl">
+        <span>
+          <span  >Iterate </span>
+          <span className="font-medium">{`faster & better`}</span>
+        </span>
+      </div>
+    ),
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "We understand that no sales process is everlasting. That is why we’re always on the hunt to bring cutting-edge AI sales tools to the platform so that you can test quick, find what sales processes work for you, without spending a fortune.",
     content: <Image src={Third} alt="Demo" className="w-[821px]" />,
   },
 ];
 
 const ScrollSection = () => {
   return (
-    <div className="mb-4 md:mb-12 lg:mb-24 bg-white flex flex-col items-start justify-center h-fit p-4 md:p-8 lg:p-12">
-      <header className="text-4xl font-semibold text-[#5549D8] font-secondary">
-        <span>Sooo, </span>
-        <span>how does it work?</span>
+    <div className="mb-4 md:mb-12 lg:mb-24 bg-white flex flex-col items-start justify-center h-fit p-6 md:p-12 lg:p-24 gap-4 md:gap-8 lg:gap-12 ">
+      <header className="text-7xl text-[#5549D8] font-secondary">
+        <span className="text-lightPurple">Sooo, </span>
+        <span className="text-secondary">how does it work?</span>
       </header>
       <div className="w-full">
         <StickyScroll content={content} />

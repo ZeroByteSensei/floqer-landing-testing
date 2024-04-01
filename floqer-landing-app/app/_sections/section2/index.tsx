@@ -40,7 +40,7 @@ const Section2 = () => {
         whileInView={{ opacity: 1, translateY: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
-        className="bg-gradient-to-r bg-clip-text from-[#5349d0] from-[-15%] to-[#8583f7] to-[85%] text-transparent text-8xl"
+        className=" integrations__gradient text-transparent bg-clip-text text-8xl font-medium"
       >
         in one flow
       </motion.span>

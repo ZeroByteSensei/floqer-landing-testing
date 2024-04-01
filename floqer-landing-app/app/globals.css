@@ -227,3 +227,16 @@ button {
     #f6c485 100%
   );
 }
+
+.integrations__gradient {
+  background: linear-gradient(
+    40deg,
+    #8270bf 35%,
+    #af98f8 50%,
+    #8270be 65%
+  );
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+  
+}

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { ReactNode, useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/app/_utils/cn";
@@ -9,7 +9,7 @@ export const StickyScroll = ({
   contentClassName,
 }: {
   content: {
-    title: string;
+    title: ReactNode | string;
     description: string;
     content?: React.ReactNode | any;
   }[];
@@ -55,13 +55,13 @@ export const StickyScroll = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className="min-h-screen xl:min-h-fit flex  relative space-x-10 rounded-md p-10 scrollbar-hide"
+      className="min-h-screen xl:min-h-fit flex  relative space-x-10 rounded-md scrollbar-hide"
       ref={ref}
     >
-      <div className="div relative flex flex-1 items-start px-4">
-        <div className="max-w-2xl">
+      <div className="div relative flex flex-1 items-start">
+        <div className="flex flex-col items-start">
           {content.map((item, index) => (
-            <div key={item.title + index} className="h-[67vh] flex flex-col justify-center gap-4">
+            <div key={index} className="h-[67vh] flex flex-col justify-center gap-4">
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -104,7 +104,7 @@ export const StickyScroll = ({
                 ease: "linear",
               }}
               className={cn(
-                "hidden lg:block h-fit rounded-md bg-white sticky top-[15vh] overflow-hidden",
+                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[15vh] overflow-hidden",
                 contentClassName
               )}
             >
