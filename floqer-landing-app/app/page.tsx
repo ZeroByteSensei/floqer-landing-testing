@@ -85,15 +85,6 @@ const Page = () => {
       </div>
 
       <Section2 />
-      {/* <div className="relative">
-        <div className="absolute inset-0 h-full z-0">
-          <div className="sticky inset-0 h-screen cards__gradient z-0"></div>
-        </div>
-        <div className="relative">
-          <Section3 />
-          <Section4 />
-        </div>
-      </div> */}
       <div ref={wrapperRef} className="">
         <Section3 />
       </div>

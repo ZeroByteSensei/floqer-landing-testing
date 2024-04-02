@@ -30,7 +30,6 @@ const Section3 = () => {
             <span className="text-[#9A7FE1]">{"You're in "}</span>{" "}
             <span>{"good company"}</span>
           </motion.h1>
-          {/* <p className="text-center">{"You don't have to trust our word"}</p> */}
         </section>
         <section className="w-full flex items-center justify-center gap-8">
           {/* <Button
