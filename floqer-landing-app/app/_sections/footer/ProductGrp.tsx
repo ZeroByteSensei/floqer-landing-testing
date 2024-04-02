@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 
 const arr = ["TapWize", "Integrations", "Pricing", "Get a demo"];
 
-const links = ["https://www.tapwize.co/", "#integrations", "", ""];
+const links = [
+  "https://www.tapwize.co/",
+  "#integrations",
+  "https://tally.so/r/m679Ek",
+  "https://tally.so/r/m679Ek",
+];
 
 const ProductGrp = () => {
   return (
@@ -18,7 +23,11 @@ const ProductGrp = () => {
             href={links[idx]}
             target={itr === "Integrations" ? "_self" : "_blank"}
             style={{ originX: 0 }}
-            whileHover={{ color: "#51407D", scale: 1.1, textDecoration: "underline" }}
+            whileHover={{
+              color: "#51407D",
+              scale: 1.1,
+              textDecoration: "underline",
+            }}
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="cursor-pointer"
           >

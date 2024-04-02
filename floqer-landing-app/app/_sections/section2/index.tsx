@@ -11,21 +11,30 @@ import { useInView, useAnimationControls } from "framer-motion";
 
 const Section2 = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const thirdref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+  const thirdInView = useInView(thirdref);
   const [done, setDone] = useState(false);
   const controls = useAnimationControls();
 
   useEffect(() => {
-    // console.log("inview val --> ", isInView);
     if (isInView && !done) {
-      // console.log("==========visible animation started==========")
       setDone(() => true);
+      controls.stop();
       controls.start("visible");
     }
-  }, [controls, isInView]);
+    if (!(isInView || thirdInView) && done) {
+      setDone(() => false);
+      controls.stop();
+      controls.start("hidden");
+    }
+  }, [controls, isInView, thirdInView, done]);
 
   return (
-    <section id="integrations" className="hidden lg:flex relative flex-col items-center justify-center h-screen font-semibold  mb-4 md:mb-12 lg:mb-24 font-secondary max-h-[776px]">
+    <section
+      id="integrations"
+      className="hidden lg:flex relative flex-col items-center justify-center h-screen font-semibold  mb-4 md:mb-12 lg:mb-24 font-secondary max-h-[776px]"
+    >
       <motion.header
         initial={{ opacity: 0, translateY: "10px" }}
         whileInView={{ opacity: 1, translateY: 0 }}
@@ -45,9 +54,9 @@ const Section2 = () => {
         in one flow
       </motion.span>
       <section className=" absolute inset-0 h-full bg-transparent grid grid-cols-2 max-w-[1520px] overflow-hidden mx-auto">
-        <Quadrant1 ref={ref} />
+        <Quadrant1 controls={controls} ref={ref} />
         <Quadrant2 controls={controls} />
-        <Quadrant3 controls={controls} />
+        <Quadrant3 controls={controls} ref={thirdref} />
         <Quadrant4 controls={controls} />
       </section>
     </section>

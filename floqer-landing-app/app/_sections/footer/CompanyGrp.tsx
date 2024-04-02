@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 const arr = ["Feature requests", "Terms of Service", "Privacy Policy"];
 
-const links = ["", "/terms_of_service", "/privacy_policy"];
+const links = [
+  "mailto:shivammahajan100@gmail.com",
+  "/terms_of_service",
+  "/privacy_policy",
+];
 
 const ProductGrp = () => {
   return (

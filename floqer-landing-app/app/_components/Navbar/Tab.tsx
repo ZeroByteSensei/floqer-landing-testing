@@ -7,7 +7,7 @@ interface Props {
 
 const Tab = ({ val, link }: Props) => {
   return (
-    <a href={link} >{val}</a>
+    <a href={link} className='text-[#6B7280]' >{val}</a>
   )
 }
 

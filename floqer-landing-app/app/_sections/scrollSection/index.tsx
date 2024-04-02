@@ -10,6 +10,7 @@ import React, { useEffect, useState } from "react";
 import First from "@/public/assets/SVGs/section2/first.svg";
 import Second from "@/public/assets/SVGs/section2/second.svg";
 import Third from "@/public/assets/SVGs/section2/third.svg";
+import NormalScroll from "./NormalScroll";
 
 const content = [
   {
@@ -56,13 +57,14 @@ const content = [
 
 const ScrollSection = () => {
   return (
-    <div className="mb-4 md:mb-12 lg:mb-24 bg-white flex flex-col items-start justify-center h-fit p-6 md:p-12 lg:p-24 gap-4 md:gap-8 lg:gap-12 max-w-[1920px] mx-auto">
-      <header className="text-7xl text-[#5549D8] font-secondary">
+    <div className="mb-4 md:mb-12 lg:mb-24 bg-white flex flex-col items-start justify-center h-fit p-6 md:p-12 lg:p-24 gap-8 lg:gap-12 max-w-[1920px] mx-auto">
+      <header className="text-6xl lg:text-7xl text-[#5549D8] font-secondary">
         <span className="text-lightPurple">Sooo, </span>
         <span className="text-secondary">how does it work?</span>
       </header>
       <div className="w-full">
         <StickyScroll content={content} />
+        <NormalScroll content={content} />
       </div>
     </div>
   );

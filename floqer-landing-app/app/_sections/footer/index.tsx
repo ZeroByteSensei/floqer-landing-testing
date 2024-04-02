@@ -24,7 +24,7 @@ const Footer = () => {
       <section className="flex flex-col items-center md:items-start md:flex-row md:justify-between w-full gap-4">
         <section className="flex flex-row gap-4 items-center">
           <Button
-            className="h-fit w-fit px-4 py-1 rounded-full shadow-md bg-white border-gray-300 border flex items-center justify-center gap-2 text-base"
+            className="h-fit w-fit px-4 py-1 rounded-full shadow-md bg-white border-gray-300 border flex items-center justify-center gap-2 text-base font-medium"
             as={Link}
             href="mailto:hello@floqer.ai"
           >
@@ -32,14 +32,14 @@ const Footer = () => {
             <span>hello@floqer.ai</span>
           </Button>
           <Button
-            className="h-fit w-fit px-4 py-1 rounded-full shadow-md bg-white border-gray-300 border flex items-center justify-center gap-2 text-base"
+            className="h-fit w-fit px-4 py-1 rounded-full shadow-md bg-white border-gray-300 border flex items-center justify-center gap-2 text-base font-medium"
             title="Please contact support via this number in case of query or complaint"
           >
             <MdOutlinePhone />
             <span>902-880-1937</span>
           </Button>
         </section>
-        <section className="flex flex-col sm:flex-row gap-6">
+        <section className="flex flex-row flex-wrap items-start gap-6">
           <ProductGrp />
           <ResourcesGrp />
           <CompanyGrp />

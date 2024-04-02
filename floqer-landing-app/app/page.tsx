@@ -64,15 +64,15 @@ const Page = () => {
   return (
     <div className="bg-white">
       <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
-      <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-4">
-        <div className="max-w-[2700px] mx-auto mb-4 md:mb-12">
+      <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-16 md:mb-8 lg:mb-4">
+        <div className="max-w-[2700px] mx-auto mb-8 md:mb-12 lg:mb-16">
           <Section1 />
         </div>
-        <section className="w-full flex flex-col items-center justify-center gap-4 font-secondary">
+        <section className="w-full flex flex-col items-center justify-center gap-8 md:gap-6 lg:gap-4 font-secondary">
           <header className="text-3xl text-secondary">
             Loved by folks from
           </header>
-          <section className="flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-12 items-center justify-center">
+          <section className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]">
             <Deel color="#51407D" />
             <Zoominfo color="#51407D" />
             <Salesforce color="#51407D" />

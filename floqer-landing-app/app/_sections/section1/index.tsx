@@ -18,6 +18,7 @@ import { NextUIProvider } from "@nextui-org/system";
 import { Button } from "@nextui-org/button";
 import WrapperFlow from "./Flow/WrapperFlows";
 import FlowSVG from "@/public/assets/SVGs/section1/Flow.svg";
+import Link from "next/link";
 
 const Flow = () => {
   return (
@@ -26,7 +27,7 @@ const Flow = () => {
         <Navbar />
         <section className="flex flex-col md:flex-row items-start justify-between p-6 lg:p-12 w-full min-h-[350px] gap-4 md:gap-0 max-w-[1800px]">
           <div
-            className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px] text-7xl"
+            className="flex flex-col gap-2 items-start w-full md:w-3/5 mt-[30px] text-5xl md:text-6xl lg:text-7xl"
             // style={{ fontWeight: 450 }}
           >
             <h1 className="font-secondary text-[#8A72CA]">
@@ -41,7 +42,12 @@ const Flow = () => {
               scraping, AI-driven automations and messaging to enrich your data
               and automate your outbound at scale.
             </span>
-            <Button className=" bg-secondary text-white">
+            <Button
+              as={Link}
+              href="https://tally.so/r/m679Ek"
+              target="_blank"
+              className="text-lg p-6 bg-secondary text-white mt-3"
+            >
               Get started now
             </Button>
           </div>
@@ -56,7 +62,7 @@ const Flow = () => {
               SecondFlow={<AnimateText payload="Leads imported..." />}
             /> */}
             {/* <WrapperFlow /> */}
-            <Image src={FlowSVG} alt="Flow-explaination" className="w-full " />
+            <Image src={FlowSVG} alt="Flow-explaination" className="w-full" />
           </section>
         </section>
         {/* <div className="absolute w-full h-[100px] bottom-[-1rem] " ></div> */}

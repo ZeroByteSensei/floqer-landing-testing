@@ -1,19 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { forwardRef } from "react";
 import { AnimationControls, motion } from "framer-motion";
 import Instantly from "@/public/assets/SVGs/Quadrant3/Instantly.svg";
-import Instant from "@/public/assets/PNGs/instantly.png"
+import Instant from "@/public/assets/PNGs/instantly.png";
 import Twitter from "@/public/assets/SVGs/Quadrant3/x-social-media.svg";
-import twitter from "@/public/assets/PNGs/twitter.png"
+import twitter from "@/public/assets/PNGs/twitter.png";
 import Sendgrid from "@/public/assets/SVGs/Quadrant3/sendgrid.svg";
-import send from "@/public/assets/PNGs/sendgrid.png"
+import send from "@/public/assets/PNGs/sendgrid.png";
 import Crunchbase from "@/public/assets/SVGs/Quadrant3/crunchbase.svg";
-import Crunch from "@/public/assets/PNGs/crunchbase.png"
+import Crunch from "@/public/assets/PNGs/crunchbase.png";
 import ProxyCurl from "@/public/assets/SVGs/Quadrant3/ProxyCurl.jpeg";
-import proxy from "@/public/assets/PNGs/proxy.png"
+import proxy from "@/public/assets/PNGs/proxy.png";
 import Outreach from "@/public/assets/SVGs/Quadrant3/Outreach.svg";
-import Out from "@/public/assets/PNGs/outreach.png"
+import Out from "@/public/assets/PNGs/outreach.png";
 
 import Image from "next/image";
 
@@ -21,9 +21,10 @@ interface Props {
   controls: AnimationControls;
 }
 
-const Quadrant3 = ({ controls }: Props) => {
+const Quadrant3 = ({ controls }: Props, ref: any) => {
   return (
     <motion.div
+      ref={ref}
       className="flex items-start justify-end text-3xl relative"
       variants={{
         hidden: { scale: 1 },
@@ -89,4 +90,4 @@ const Quadrant3 = ({ controls }: Props) => {
   );
 };
 
-export default Quadrant3;
+export default forwardRef(Quadrant3);

@@ -1,6 +1,7 @@
 import { BackgroundBeams } from "@/app/_components/animations/Backgroundbeams";
 import { SparklesCore } from "@/app/_components/animations/Sparkles";
 import { Button } from "@nextui-org/button";
+import Link from "next/link";
 import React from "react";
 
 const Section5 = () => {
@@ -17,12 +18,15 @@ const Section5 = () => {
           particleColor="#8660a6"
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#aea8f9] from-30% via-[#dcbef9] via-45% to-[#f5c4cc] to-70% bg-clip-text text-6xl md:text-7xl text-transparent font-secondary">
+      <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#aea8f9] from-30% via-[#dcbef9] via-45% to-[#f5c4cc] to-70% bg-clip-text text-5xl md:text-6xl lg:text-7xl text-transparent text-center font-secondary">
         <span>Scale your sales motion in</span>
         <span>seconds, not months.</span>
       </div>
       <Button
-        className="text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
+        as={Link}
+        href="https://tally.so/r/m679Ek"
+        target="_blank"
+        className="text-3xl md:text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
         bg-gradient-to-r from-[#dcbef9] from-[7%] via-[#f5c3cc] via-[49%] to-[#f9dadf] to-100%"
       >
         Get in touch

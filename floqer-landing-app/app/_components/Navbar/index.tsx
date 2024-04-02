@@ -7,6 +7,7 @@ import AnimateLoad from "../animations/AnimateLoad";
 import Dropdown from "./Dropdown";
 import { Button } from "@nextui-org/button";
 import AnimateOnView from "../animations/AnimateOnView";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -19,14 +20,16 @@ const index = () => {
       transition={{
         duration: 0.3,
       }}
-      className="w-[90%] max-w-[1920px] flex items-center gap-2 p-4 md:py-6 md:px-10 justify-between bg-white shadow-lg rounded-full"
+      className="w-[95%] max-w-[1920px] flex items-center gap-2 p-4 md:py-6 md:px-10 justify-between bg-white shadow-lg rounded-full"
     >
-      <section className="flex items-center justify-between w-fit sm:w-1/2 max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
+      <section className="flex items-center justify-between w-fit  max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
         <AnimateLoad delay={0}>
-          <header className="text-4xl font-semibold text-[#8C74CC] font-secondary">floqer</header>
+          <header className="text-4xl font-semibold text-[#8C74CC] font-secondary">
+            floqer
+          </header>
         </AnimateLoad>
         <Tabs />
-        <Dropdown />
+        {/* <Dropdown /> */}
       </section>
       {/* <motion.button
         whileTap={{ scale: 0.85 }}
@@ -43,7 +46,14 @@ const index = () => {
       >
         Request a demo
       </motion.button> */}
-      <Button className=" bg-secondary text-white">Get started now</Button>
+      <Button
+        as={Link}
+        href="https://tally.so/r/m679Ek"
+        target="_blank"
+        className="hidden lg:flex text-lg p-6 bg-secondary text-white"
+      >
+        Get started now
+      </Button>
     </motion.nav>
   );
 };

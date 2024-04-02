@@ -35,14 +35,14 @@ const Stat = ({ val, metric, description, num2, num1 }: Props) => {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center gap-2 max-w-[190px]"
+      className="flex flex-col items-center gap-2 max-w-[140px] md:max-w-[190px]"
     >
       <div className="flex justify-center items-end ">
         <span
           ref={statRef}
-          className="font-bold text-8xl text-secondary font-secondary"
+          className="font-bold text-4xl md:text-6xl lg:text-8xl text-secondary font-secondary"
         ></span>
-        <span className="text-[#9077D2] mb-4">{metric}</span>
+        <span className="text-[#9077D2] md:mb-4">{metric}</span>
       </div>
       <span className="text-sm font-light text-[#11244A] text-center">
         {description}

@@ -64,7 +64,7 @@ export const faqs = [
       <>
         {"We’re just a click away, Sign-up on this "}
         <a
-          href=""
+          href="https://tally.so/r/m679Ek"
           target="_blank"
           className="underline text-primary font-semibold"
         >

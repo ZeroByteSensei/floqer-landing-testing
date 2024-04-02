@@ -55,7 +55,7 @@ export const StickyScroll = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className="min-h-screen xl:min-h-fit flex  relative space-x-10 rounded-md scrollbar-hide"
+      className="min-h-screen xl:min-h-fit hidden lg:flex relative space-x-10 rounded-md scrollbar-hide"
       ref={ref}
     >
       <div className="div relative flex flex-1 items-start">
@@ -104,7 +104,7 @@ export const StickyScroll = ({
                 ease: "linear",
               }}
               className={cn(
-                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[25%] overflow-hidden",
+                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[23%] overflow-hidden",
                 contentClassName
               )}
             >

@@ -18,7 +18,11 @@ const ResourcesGrp = () => {
             href={links[idx]}
             target={itr === "FAQs" ? "_self" : "_blank"}
             style={{ originX: 0 }}
-            whileHover={{ color: "#51407D", scale: 1.1, textDecoration: "underline" }}
+            whileHover={{
+              color: "#51407D",
+              scale: 1.1,
+              textDecoration: "underline",
+            }}
             transition={{ duration: 0.2, ease: "easeOut" }}
             className="cursor-pointer"
           >

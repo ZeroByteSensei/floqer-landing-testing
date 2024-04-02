@@ -1,7 +1,7 @@
 "use client";
 
 import React, { forwardRef } from "react";
-import { motion } from "framer-motion";
+import { AnimationControls, motion } from "framer-motion";
 import Image from "next/image";
 import Apollo from "@/public/assets/SVGs/ApolloSVG.svg";
 import apollo from "@/public/assets/PNGs/apollo.png";
@@ -13,7 +13,12 @@ import Zoom from "@/public/assets/PNGs/zoominfo.png";
 import Lusha from "@/public/assets/SVGs/Quadrant1/lusha.png";
 import lusha from "@/public/assets/PNGs/lusha_second.png";
 
-const Quadrant1 = (props: any, ref: any) => (
+interface Props {
+  controls: AnimationControls;
+}
+
+
+const Quadrant1 = ({ controls }: Props, ref: any) => (
   <motion.div
     ref={ref}
     className="flex items-end justify-end text-3xl relative"
@@ -24,10 +29,12 @@ const Quadrant1 = (props: any, ref: any) => (
     initial={{
       scale: 1,
     }}
-    whileInView={{
-      scale: 1.15,
+    variants={{
+      hidden: { scale: 1 },
+      visible: { scale: 1.15 },
     }}
-    viewport={{ once: true }}
+    animate={controls}
+    // viewport={{ }}
     transition={{
       duration: 2.5,
       ease: "easeInOut",
