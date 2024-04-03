@@ -38,13 +38,13 @@ const Links = () => {
       <LinkButton link={LKD_LINK} title="Linkedin" >
         <FaLinkedin size={31} />
       </LinkButton>
-      <LinkButton link="" title="Youtube" >
+      {/* <LinkButton link="" title="Youtube" >
         <FaYoutube size={31} />
       </LinkButton>
 
       <LinkButton link="" title="Instagram" >
         <FaInstagram size={31} />
-      </LinkButton>
+      </LinkButton> */}
 
       <LinkButton link={TWITTER_LINK} title="Twitter(X)" >
         <FaXTwitter size={31} />

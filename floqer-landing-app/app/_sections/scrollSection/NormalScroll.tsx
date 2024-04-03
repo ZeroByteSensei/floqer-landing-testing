@@ -19,7 +19,7 @@ const NormalScroll = ({ content }: Props) => {
           <h2 className="text-4xl font-bold text-secondary font-secondary">
             {item.title}
           </h2>
-          <p className="text-kg text-xl text-[#40444D] max-w-sm mt-10">
+          <p className="text-kg text-xl text-[#40444D] mt-10">
             {item.description}
           </p>
           <div

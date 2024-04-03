@@ -37,7 +37,7 @@ const Flow = () => {
               sales process on autopilot
             </h1>
             <span className="font-light text-base w-full md:w-[95%] text-[#40444D]">
-              Help your sales team drive more revenue. Build workflows composed
+              Help your sales team drive more revenue. Build workflows composed of
               50+ industry-leading data sources, web scraping, AI-driven
               automations and messaging, to enrich your data and automate your
               sales motion at scale.

@@ -407,7 +407,7 @@ const SwipeDump = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>  
           </div> */}
         </div>
       </div>

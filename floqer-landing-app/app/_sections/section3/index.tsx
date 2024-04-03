@@ -6,8 +6,8 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import React from "react";
 import Card from "./Card";
 import Stat from "./Stat";
-import SwipeDump from "./Swipedump";
-import SmallerSwipe from "./SmallerSwipe";
+import SwipeDump from "./SwipeDump/Swipedump";
+import SwipeBase from "./SwipeBase/SwipeBase";
 
 const Section3 = () => {
   return (
@@ -47,6 +47,9 @@ const Section3 = () => {
           </Button> */}
           <div className="hidden xl:block">
             <SwipeDump />
+          </div>
+          <div className="block xl:hidden" >
+            <SwipeBase />
           </div>
           {/* <div className="block xl:hidden" >
             <SmallerSwipe />
