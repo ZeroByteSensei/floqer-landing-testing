@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import "./num1.scss";
 import "./num2.scss";
-import "./num3.scss"
+import "./num3.scss";
 
 interface Props {
   val: number;
@@ -26,8 +26,8 @@ const Stat = ({ val, metric, description, num2, num1 }: Props) => {
       // console.log("============in view============  ", statRef.current);
       setDone(() => true);
       // console.log("num2 --> ", num2)
-      if(num2) statRef.current.classList.add("num2");
-      else if(num1) statRef.current.classList.add("num1");
+      if (num2) statRef.current.classList.add("num2");
+      else if (num1) statRef.current.classList.add("num1");
       else statRef.current.classList.add("num3");
     }
   }, [statRef, isInView]);
@@ -40,8 +40,11 @@ const Stat = ({ val, metric, description, num2, num1 }: Props) => {
       <div className="flex justify-center items-end ">
         <span
           ref={statRef}
-          className="font-bold text-4xl md:text-6xl lg:text-8xl text-secondary font-secondary"
+          className="hidden md:inline font-bold text-4xl md:text-6xl lg:text-8xl text-secondary font-secondary"
         ></span>
+        <span className="md:hidden font-bold text-4xl md:text-6xl lg:text-8xl text-secondary font-secondary">
+          {num1 ? 200 : num2 ? 20 : 15}
+        </span>
         <span className="text-[#9077D2] md:mb-4">{metric}</span>
       </div>
       <span className="text-sm font-light text-[#11244A] text-center">
