@@ -6,6 +6,9 @@
 
 .num1 {
   animation: counter1 2s ease-out forwards;
+  -webkit-animation: counter1 2s ease-out forwards;
+  -moz-animation: counter1 2s ease-out forwards;
+  -o-animation: counter1 2s ease-out forwards;
   counter-reset: num var(--num);
   // font: 800 40px system-ui;
   // padding: 2rem;
