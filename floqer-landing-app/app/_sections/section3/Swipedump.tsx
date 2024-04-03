@@ -238,7 +238,7 @@ const SwipeDump = () => {
 
                 <div>
                   <div className="wall-comment-user-name">Nathan Conway</div>
-                  <div className="wall-comment-user-title">Leader</div>
+                  <div className="wall-comment-user-title">Sales Leader</div>
                 </div>
               </div>
             </div>
@@ -327,7 +327,7 @@ const SwipeDump = () => {
                 THE premium sales automation tool around
               </span>
               <div className="wall-comment-content">
-                {`“I was sceptical at first about how an AI tool could understand the nuances or the different tasks involved in our sales cycle. But I've been pleasantly surprised! The automations are rather easy to learn, and use, allowing me to actually focus on what matters, SELLING!”`}
+                {`I was sceptical at first about how an AI tool could understand the nuances or the different tasks involved in our sales cycle. But I've been pleasantly surprised! The automations are rather easy to learn, and use, allowing me to actually focus on what matters, SELLING!`}
               </div>
               <span
                 className="text-7xl text-[#8F76D1] font-secondary font-bold"

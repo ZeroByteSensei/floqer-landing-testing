@@ -116,3 +116,8 @@ export const reviews = [
 
 
 export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+
+export const TWITTER_LINK = "https://twitter.com/Floqer_ai";
+
+export const LKD_LINK = "https://www.linkedin.com/company/floqer";

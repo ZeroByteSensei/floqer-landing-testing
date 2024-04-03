@@ -46,14 +46,14 @@ const index = () => {
       >
         Request a demo
       </motion.button> */}
-      <Button
+      {/* <Button
         as={Link}
         href="https://tally.so/r/m679Ek"
         target="_blank"
         className="hidden lg:flex text-lg p-6 bg-secondary text-white"
       >
         Get started now
-      </Button>
+      </Button> */}
     </motion.nav>
   );
 };

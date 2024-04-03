@@ -15,7 +15,7 @@ import NormalScroll from "./NormalScroll";
 const content = [
   {
     title: (
-      <div className="flex flex-col text-secondary font-normal text-5xl">
+      <div className="flex flex-col text-secondary font-normal text-5xl lg:text-6xl">
         <span>
           <span className="font-medium">Drag and drop </span>
           <span>tools</span>
@@ -29,7 +29,7 @@ const content = [
   },
   {
     title: (
-      <div className="flex flex-col text-secondary font-normal text-5xl">
+      <div className="flex flex-col text-secondary font-normal text-5xl lg:text-6xl">
         <span>
           <span className="font-medium">Turn your integrations</span>
         </span>
@@ -42,7 +42,7 @@ const content = [
   },
   {
     title: (
-      <div className="flex flex-col text-secondary font-normal text-5xl">
+      <div className="flex flex-col text-secondary font-normal text-5xl lg:text-6xl">
         <span>
           <span  >Iterate </span>
           <span className="font-medium">{`faster & better`}</span>

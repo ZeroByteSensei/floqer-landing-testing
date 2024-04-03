@@ -1,6 +1,8 @@
 "use client";
 
+import { LKD_LINK, TWITTER_LINK } from "@/app/_utils/constants";
 import { Button } from "@nextui-org/button";
+import Link from "next/link";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -20,7 +22,9 @@ const LinkButton = ({
     <Button
       isIconOnly
       className="h-fit w-fit flex items-center justify-center p-2 border-2 border-transparent hover:border-gray-300 transition rounded-full bg-white"
-      onClick={() => window.open(link, "_blank")}
+      as={Link}
+      href={link}
+      target="_blank"
       title={`${title} link`}
     >
       {children}
@@ -31,7 +35,7 @@ const LinkButton = ({
 const Links = () => {
   return (
     <div className="flex gap-3 items-center">
-      <LinkButton link="" title="Linkedin" >
+      <LinkButton link={LKD_LINK} title="Linkedin" >
         <FaLinkedin size={31} />
       </LinkButton>
       <LinkButton link="" title="Youtube" >
@@ -42,7 +46,7 @@ const Links = () => {
         <FaInstagram size={31} />
       </LinkButton>
 
-      <LinkButton link="" title="Twitter(X)" >
+      <LinkButton link={TWITTER_LINK} title="Twitter(X)" >
         <FaXTwitter size={31} />
       </LinkButton>
     </div>
