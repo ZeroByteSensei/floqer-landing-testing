@@ -12,6 +12,7 @@ export const StickyScroll = ({
     title: ReactNode | string;
     description: string;
     content?: React.ReactNode | any;
+    topPos: string;
   }[];
   contentClassName?: string;
 }) => {
@@ -104,7 +105,7 @@ export const StickyScroll = ({
                 ease: "linear",
               }}
               className={cn(
-                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky top-[23%] overflow-hidden",
+                "hidden lg:block h-fit max-w-[45vw] rounded-md bg-white sticky overflow-hidden "+ itr.topPos,
                 contentClassName
               )}
             >

@@ -26,6 +26,7 @@ const content = [
     description:
       "Choose from a list of 50+ leading sales tools and drop them into our visual builder to start building your custom sales flow.",
     content: <Image src={First} alt="Demo" className="" />,
+    topPos: "top-[23%]"
   },
   {
     title: (
@@ -39,6 +40,7 @@ const content = [
     description:
       "Replicate or level up your sales process by adding custom logic, and conditions where needed.",
     content: <Image src={Second} alt="Demo" className="w-[821px]" />,
+    topPos: "top-[20%]"
   },
   {
     title: (
@@ -52,6 +54,7 @@ const content = [
     description:
       "We understand that no sales process is everlasting. That is why we’re always on the hunt to bring cutting-edge AI sales tools to the platform so that you can test quick, find what sales processes work for you, without spending a fortune.",
     content: <Image src={Third} alt="Demo" className="w-[821px]" />,
+    topPos: "top-[17%]"
   },
 ];
 

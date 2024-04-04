@@ -1,8 +1,11 @@
+"use client";
+
 import { BackgroundBeams } from "@/app/_components/animations/Backgroundbeams";
 import { SparklesCore } from "@/app/_components/animations/Sparkles";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Section5 = () => {
   return (
@@ -22,15 +25,23 @@ const Section5 = () => {
         <span>Scale your sales motion in</span>
         <span>seconds, not months.</span>
       </div>
-      <Button
-        as={Link}
-        href="https://tally.so/r/m679Ek"
-        target="_blank"
-        className="text-3xl md:text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
-        bg-gradient-to-r from-[#dcbef9] from-[7%] via-[#f5c3cc] via-[49%] to-[#f9dadf] to-100%"
+      <motion.div
+        initial={{ scale: 0.8 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+      
       >
-        Get in touch
-      </Button>
+        <Button
+          as={Link}
+          href="https://tally.so/r/m679Ek"
+          target="_blank"
+          className="text-3xl md:text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
+        bg-gradient-to-r from-[#dcbef9] from-[7%] via-[#f5c3cc] via-[49%] to-[#f9dadf] to-100%"
+        >
+          Get in touch
+        </Button>
+      </motion.div>
     </div>
   );
 };

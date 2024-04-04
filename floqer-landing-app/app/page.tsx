@@ -69,18 +69,30 @@ const Page = () => {
           <Section1 />
         </div>
         <section className="w-full flex flex-col items-center justify-center gap-8 md:gap-6 lg:gap-4 font-secondary">
-          <header className="text-3xl text-secondary">
+          <motion.header
+            initial={{ opacity: 0, translateY: "2px" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.3, delay: 0.4, ease: "linear" }}
+            viewport={{ once: true }}
+            className="text-3xl text-secondary"
+          >
             Loved by folks from
-          </header>
-          <section className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]">
+          </motion.header>
+          <motion.section
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]"
+          >
             <Deel color="#51407D" />
             <Zoominfo color="#51407D" />
             <Salesforce color="#51407D" />
             <Illumin color="#51407D" />
-          </section>
+          </motion.section>
         </section>
       </div>
-      <div className="" id="how-it-works" >
+      <div className="" id="how-it-works">
         <ScrollSection />
       </div>
 
@@ -88,7 +100,11 @@ const Page = () => {
       <div ref={wrapperRef} className="">
         <Section3 />
       </div>
-      <div id="faqs" ref={lowerRef} className="relative bg-white pb-4 md:pb-12 lg:pb-24 ">
+      <div
+        id="faqs"
+        ref={lowerRef}
+        className="relative bg-white pb-4 md:pb-12 lg:pb-24 "
+      >
         <Section4 />
       </div>
       <Section5 />

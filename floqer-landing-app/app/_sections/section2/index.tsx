@@ -48,7 +48,7 @@ const Section2 = () => {
         initial={{ opacity: 0, translateY: "10px" }}
         whileInView={{ opacity: 1, translateY: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
+        transition={{ duration: 0.3, delay: 1, ease: "easeOut" }}
         className=" integrations__gradient text-transparent bg-clip-text text-8xl font-medium"
       >
         in one flow

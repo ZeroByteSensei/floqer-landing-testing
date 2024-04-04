@@ -1,4 +1,6 @@
+"use client";
 import React, { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   content: {
@@ -16,18 +18,33 @@ const NormalScroll = ({ content }: Props) => {
           key={index}
           className="flex flex-col items-start justify-center gap-4"
         >
-          <h2 className="text-4xl font-bold text-secondary font-secondary">
+          <motion.h2
+            initial={{ opacity: 0, translateY: "2px" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold text-secondary font-secondary"
+          >
             {item.title}
-          </h2>
-          <p className="text-kg text-xl text-[#40444D] mt-10">
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, translateY: "2px" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            viewport={{ once: true }}
+          className="text-kg text-xl text-[#40444D] mt-10">
             {item.description}
-          </p>
-          <div
+          </motion.p>
+          <motion.div
+          initial={{ opacity: 0, translateY: "2px" }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          viewport={{ once: true }}
             key={index}
             className={"h-fit rounded-md bg-white overflow-hidden"}
           >
             {item.content ?? null}
-          </div>
+          </motion.div>
         </div>
       ))}
     </div>

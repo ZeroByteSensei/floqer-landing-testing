@@ -23,17 +23,17 @@ export default function FAQ() {
       className="gap-8"
     >
       {faqs.map((itr, idx) => (
-        <AccordionItem
-          key={idx}
-          aria-label="itr"
-          title={itr.question}
-          indicator={({ isOpen }) =>
-            isOpen ? <IoClose size={"20px"} /> : <CgMathPlus size={"20px"} />
-          }
-          // indicator={<FaPlus />}
-        >
-          <span className="text-[#666666]">{itr.answer}</span>
-        </AccordionItem>
+          <AccordionItem
+            key={idx}
+            aria-label="itr"
+            title={itr.question}
+            indicator={({ isOpen }) =>
+              isOpen ? <IoClose size={"20px"} /> : <CgMathPlus size={"20px"} />
+            }
+            // indicator={<FaPlus />}
+          >
+            <span className="text-[#666666]">{itr.answer}</span>
+          </AccordionItem>
       ))}
       {/* <AccordionItem
         key="1"
