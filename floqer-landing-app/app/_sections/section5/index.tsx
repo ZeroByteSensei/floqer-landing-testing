@@ -26,10 +26,10 @@ const Section5 = () => {
         <span>seconds, not months.</span>
       </div>
       <motion.div
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+        // initial={{ scale: 0.8 }}
+        // whileInView={{ scale: 1 }}
+        // viewport={{ once: true }}
+        // transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
       
       >
         <Button
