@@ -8,6 +8,7 @@ import Dropdown from "./Dropdown";
 import { Button } from "@nextui-org/button";
 import AnimateOnView from "../animations/AnimateOnView";
 import Link from "next/link";
+import Logo from "@/public/assets/SVGs/Logo";
 
 const index = () => {
   return (
@@ -24,8 +25,9 @@ const index = () => {
     >
       <section className="flex items-center justify-between w-fit  max-w-[200px] md:max-w-[600px] gap-4 md:gap-12">
         <AnimateLoad delay={0}>
-          <header className="text-4xl font-semibold text-[#8C74CC] font-secondary">
-            floqer
+          <header className="text-4xl font-semibold text-[#9A7FE1] font-secondary flex items-center justify-center gap-4">
+            <Logo />
+            <span>floqer</span>
           </header>
         </AnimateLoad>
         <Tabs />

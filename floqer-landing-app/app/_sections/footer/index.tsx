@@ -7,15 +7,19 @@ import ResourcesGrp from "./ResourcesGrp";
 import CompanyGrp from "./CompanyGrp";
 import Links from "./Links";
 import Link from "next/link";
-import Divider from "@/public/assets/PNGs/footerDivider.png"
+import Divider from "@/public/assets/PNGs/footerDivider.png";
 import Image from "next/image";
 import Disclaimer from "./Disclaimer";
+import Logo from "@/public/assets/SVGs/Logo";
 
 const Footer = () => {
   return (
     <div className="bg-white p-4 md:p-12 lg:p-24 flex flex-col items-center md:items-start justify-center gap-6">
       <section className="flex gap-4 items-center h-fit">
-        <header className="font-semibold text-primary text-2xl font-secondary">floqer</header>
+        <header className="font-semibold text-[#9A7FE1] text-2xl font-secondary flex items-center justify-center gap-2">
+          <Logo size="24" />
+          <span >floqer</span>
+        </header>
         <div className="w-px bg-gray-100 h-[24px]"></div>
         <span className="text-[#625E6F] text-base">
           Supercharge your sales motion © 2024 Floqer.ai
@@ -47,7 +51,7 @@ const Footer = () => {
       </section>
       <Links />
       <Image src={Divider} alt="Divider" className="mx-auto" />
-      <Disclaimer  />
+      <Disclaimer />
     </div>
   );
 };
