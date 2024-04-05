@@ -7,8 +7,8 @@ import React, { useEffect, useState } from "react";
 // import Frame2 from "@/public/assets/SVGs/scrollsection/frame2.svg";
 // import Frame3 from "@/public/assets/SVGs/scrollsection/frame3.svg";
 // import Frame4 from "@/public/assets/SVGs/scrollsection/frame4.svg";
-// import First from "@/public/assets/SVGs/section2/first.svg";
-import First from "@/public/assets/PNGs/section2/first.png"
+import First from "@/public/assets/SVGs/section2/first.svg";
+// import First from "@/public/assets/PNGs/section2/first.png"
 import Second from "@/public/assets/SVGs/section2/second.svg";
 import Third from "@/public/assets/SVGs/section2/third.svg";
 import NormalScroll from "./NormalScroll";
