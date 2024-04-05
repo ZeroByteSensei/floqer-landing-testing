@@ -79,10 +79,10 @@ const Page = () => {
             Loved by folks from
           </motion.header>
           <motion.section
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.75, delay: 0.5, ease: "easeInOut" }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0, scale: 0.8 }}
+            // whileInView={{ opacity: 1, scale: 1 }}
+            // transition={{ duration: 0.75, delay: 0.5, ease: "easeInOut" }}
+            // viewport={{ once: true }}
             className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]"
           >
             <Deel color="#51407D" />
