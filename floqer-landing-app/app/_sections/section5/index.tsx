@@ -34,7 +34,7 @@ const Section5 = () => {
       >
         <Button
           as={Link}
-          href="https://tally.so/r/m679Ek"
+          href="https://app.reclaim.ai/m/shivam-mahajan/critical-meetings"
           target="_blank"
           className="text-3xl md:text-4xl px-8 font-bold py-4 h-fit w-fit text-[#170F2D]
         bg-gradient-to-r from-[#dcbef9] from-[7%] via-[#f5c3cc] via-[49%] to-[#f9dadf] to-100%"

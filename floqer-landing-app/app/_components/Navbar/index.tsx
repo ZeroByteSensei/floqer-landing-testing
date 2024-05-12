@@ -50,7 +50,7 @@ const index = () => {
       </motion.button> */}
       {/* <Button
         as={Link}
-        href="https://tally.so/r/m679Ek"
+        href="https://app.reclaim.ai/m/shivam-mahajan/critical-meetings"
         target="_blank"
         className="hidden lg:flex text-lg p-6 bg-secondary text-white"
       >

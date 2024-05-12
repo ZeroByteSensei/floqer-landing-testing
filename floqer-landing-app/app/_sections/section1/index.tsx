@@ -69,7 +69,7 @@ const Flow = () => {
             >
               <Button
                 as={Link}
-                href="https://tally.so/r/m679Ek"
+                href="https://app.reclaim.ai/m/shivam-mahajan/critical-meetings"
                 target="_blank"
                 className="text-lg p-6 bg-secondary text-white mt-3"
               >

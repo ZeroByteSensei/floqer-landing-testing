@@ -64,7 +64,7 @@ export const faqs = [
       <>
         {"We’re just a click away, Sign-up on this "}
         <a
-          href="https://tally.so/r/m679Ek"
+          href="https://app.reclaim.ai/m/shivam-mahajan/critical-meetings"
           target="_blank"
           className="underline text-primary font-semibold"
         >

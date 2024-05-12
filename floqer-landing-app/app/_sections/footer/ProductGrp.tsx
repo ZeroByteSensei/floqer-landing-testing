@@ -7,8 +7,8 @@ const arr = ["TapWize", "Integrations", "Pricing", "Get a demo"];
 const links = [
   "https://www.tapwize.co/",
   "#integrations",
-  "https://tally.so/r/m679Ek",
-  "https://tally.so/r/m679Ek",
+  "https://app.reclaim.ai/m/shivam-mahajan/critical-meetings",
+  "https://app.reclaim.ai/m/shivam-mahajan/critical-meetings",
 ];
 
 const ProductGrp = () => {
