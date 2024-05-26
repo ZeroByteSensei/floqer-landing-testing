@@ -54,8 +54,8 @@ const Logo = ({ size }: Props) => {
           y2="13.7928"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_779_1369"
@@ -65,8 +65,8 @@ const Logo = ({ size }: Props) => {
           y2="18.1828"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_779_1369"
@@ -76,8 +76,8 @@ const Logo = ({ size }: Props) => {
           y2="31.1991"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_779_1369"
@@ -87,8 +87,8 @@ const Logo = ({ size }: Props) => {
           y2="40.1404"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_779_1369"
@@ -98,8 +98,8 @@ const Logo = ({ size }: Props) => {
           y2="41.5877"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_779_1369"
@@ -109,8 +109,8 @@ const Logo = ({ size }: Props) => {
           y2="40.157"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_779_1369"
@@ -120,8 +120,8 @@ const Logo = ({ size }: Props) => {
           y2="25.3043"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_779_1369"
@@ -131,8 +131,8 @@ const Logo = ({ size }: Props) => {
           y2="13.512"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CEB0FF" />
-          <stop offset="0.525" stop-color="#9A7FE1" />
+          <stop stopColor="#CEB0FF" />
+          <stop offset="0.525" stopColor="#9A7FE1" />
         </linearGradient>
       </defs>
     </svg>

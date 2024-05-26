@@ -14,6 +14,7 @@ import Zoominfo from "@/public/assets/SVGs/section1/Zoominfo";
 import Illumin from "@/public/assets/SVGs/section1/Illumin";
 import Salesforce from "@/public/assets/SVGs/Salesforce";
 import { motion } from "framer-motion";
+import Script from "next/script";
 
 const Page = () => {
   const wrapperRef = React.useRef<HTMLDivElement>(null);
@@ -111,6 +112,8 @@ const Page = () => {
       <div id="contact-us" className="max-w-[2700px] mx-auto relative">
         <Footer />
       </div>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-1TBCT2BD2G" />
+      <Script src="script.js" />
     </div>
   );
 };
