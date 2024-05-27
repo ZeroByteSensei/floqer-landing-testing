@@ -114,6 +114,7 @@ const Page = () => {
       </div>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-1TBCT2BD2G" />
       <Script src="script.js" />
+      <Script src="wrapScript.js" />
     </div>
   );
 };
