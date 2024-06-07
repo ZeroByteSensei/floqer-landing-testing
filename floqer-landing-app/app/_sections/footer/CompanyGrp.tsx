@@ -6,8 +6,8 @@ const arr = ["Feature requests", "Terms of Service", "Privacy Policy"];
 
 const links = [
   "mailto:shivammahajan100@gmail.com",
-  "/terms_of_service",
-  "/privacy_policy",
+  "/terms-of-service",
+  "/privacy-policy",
 ];
 
 const ProductGrp = () => {

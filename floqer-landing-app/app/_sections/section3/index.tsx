@@ -14,7 +14,7 @@ const Section3 = () => {
     <NextUIProvider>
       <section className="w-full flex flex-col items-center justify-center gap-12 mb-4 md:mb-12 lg:mb-24 min-h-screen xl:min-h-fit py-6 max-h-[2100px] bg-gradient-to-b from-[#fff] from-0% via-[#f2effe] via-[42%] to-[#fcece7] to-100% pb-6 md:pb-12 lg:pb-24">
         <section className="flex flex-col gap-4 items-center justify-center text-secondary p-4">
-          <motion.h1
+          <motion.span
             initial={{
               opacity: 0,
               translateY: "10px",
@@ -29,7 +29,7 @@ const Section3 = () => {
           >
             <span className="text-[#9A7FE1]">{"You're in "}</span>{" "}
             <span>{"good company"}</span>
-          </motion.h1>
+          </motion.span>
         </section>
         <section className="w-full flex items-center justify-center gap-8">
           {/* <Button
@@ -48,7 +48,7 @@ const Section3 = () => {
           <div className="hidden xl:block">
             <SwipeDump />
           </div>
-          <div className="block xl:hidden" >
+          <div className="block xl:hidden">
             <SwipeBase />
           </div>
           {/* <div className="block xl:hidden" >
@@ -62,7 +62,7 @@ const Section3 = () => {
             description="more deals closed by sales teams using Floqer to automate their sales process."
             num1
           />
-          <div className= "hidden sm:block h-[85px] w-px bg-gray-300" />
+          <div className="hidden sm:block h-[85px] w-px bg-gray-300" />
           <Stat
             val={12}
             metric="hrs"

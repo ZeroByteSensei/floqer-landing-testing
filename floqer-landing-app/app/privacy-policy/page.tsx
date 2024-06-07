@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head"
 
 const Page = () => {
   return (
@@ -123,11 +124,11 @@ const Page = () => {
             <p>
               <strong>Website</strong> refers to Get Pipeline, accessible from{" "}
               <a
-                href="https://buildpipeline.ai/"
-                rel="external nofollow noopener"
+                href="https://floqer.com/"
+                rel="external noopener"
                 target="_blank"
               >
-                https://buildpipeline.ai/
+                https://floqer.com/
               </a>
             </p>
           </li>
@@ -587,11 +588,11 @@ const Page = () => {
             <p>
               By email:{" "}
               <a
-                href="mailto:shivam@buildpipeline.ai"
+                href="mailto:shivam@floqer.com"
                 className="__cf_email__ hover:underline "
                 data-cfemail="ef9c8786998e82af8d9a86838b9f869f8a8386818ac18e86"
               >
-                shivam@buildpipeline.ai
+                shivam@floqer.com
               </a>
             </p>
           </li>

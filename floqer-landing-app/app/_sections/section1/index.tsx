@@ -30,7 +30,7 @@ const Flow = () => {
             className="flex flex-col gap-2 items-start w-full md:w-3/5 xl:mt-[30px] text-5xl md:text-6xl"
             // style={{ fontWeight: 450 }}
           >
-            <motion.h1
+            <motion.span
               initial={{ opacity: 0, translateY: "3px" }}
               whileInView={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.3, delay: 0.1 }}
@@ -38,8 +38,8 @@ const Flow = () => {
               className="font-secondary text-[#8A72CA]"
             >
               All in one tool to put your
-            </motion.h1>
-            <motion.h1
+            </motion.span>
+            <motion.span
               initial={{ opacity: 0, translateY: "3px" }}
               whileInView={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.3, delay: 0.2 }}
@@ -47,7 +47,7 @@ const Flow = () => {
               className="font-secondary  text-[#51407D]"
             >
               sales process on autopilot
-            </motion.h1>
+            </motion.span>
             <motion.span
               initial={{ opacity: 0, translateY: "3px" }}
               whileInView={{ opacity: 1, translateY: 0 }}

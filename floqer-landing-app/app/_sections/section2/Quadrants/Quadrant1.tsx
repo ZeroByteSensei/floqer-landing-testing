@@ -44,7 +44,7 @@ const Quadrant1 = ({ controls }: Props, ref: any) => (
     <Image
       src={apollo}
       alt="Apollo"
-      title="Apollo"
+      title="Apollo: The Sales Intelligence Platform"
       className="absolute h-[113px] w-[113px] top-[20%] right-[30%]"
     />
     <Image
