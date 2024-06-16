@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description: 'Floqer Terms of Service',
 };
 
-const page = () => {
+const Page = () => {
   return <iframe src="/assets/terms.html"  className="fixed inset-0 w-screen h-screen overflow-auto" />;
 }
 
-export default page;
+export default Page;
