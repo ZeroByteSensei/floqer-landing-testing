@@ -15,6 +15,7 @@ import Illumin from "@/public/assets/SVGs/section1/Illumin";
 import Salesforce from "@/public/assets/SVGs/Salesforce";
 import { motion } from "framer-motion";
 import Script from "next/script";
+import Head from 'next/head';
 
 const Page = () => {
   const wrapperRef = React.useRef<HTMLDivElement>(null);
@@ -63,59 +64,65 @@ const Page = () => {
   // }, [lowerRef.current])
 
   return (
-    <div className="bg-white">
-      <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
-      <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-16 md:mb-8 lg:mb-4">
-        <div className="max-w-[2700px] mx-auto mb-8 md:mb-12 lg:mb-16">
-          <Section1 />
+    <>
+      <Head>
+        <title>Floqer | Best alternative to Clay.com</title>
+        <meta name = "description" content="Floqer is the best alternative to Clay.com, providing sales teams with 100+ data sources helping them enrich the data at the most cost-effective price range, and automate sales processes with AI powered workflows. Start using Floqer today!" />
+      </Head>
+      <div className="bg-white">
+        <div className="second__gradient absolute top-0 right-0 h-[80vh] w-[30vw] opacity-10 blur-lg" />
+        <div className="first__gradient min-h-screen xl:min-h-fit pb-4 md:pb-12 lg:pb-24 mb-16 md:mb-8 lg:mb-4">
+          <div className="max-w-[2700px] mx-auto mb-8 md:mb-12 lg:mb-16">
+            <Section1 />
+          </div>
+          <section className="w-full flex flex-col items-center justify-center gap-8 md:gap-6 lg:gap-4 font-secondary">
+            <motion.header
+              initial={{ opacity: 0, translateY: "2px" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: 0.4, ease: "linear" }}
+              viewport={{ once: true }}
+              className="text-3xl text-secondary"
+            >
+              Loved by folks from
+            </motion.header>
+            <motion.section
+              // initial={{ opacity: 0, scale: 0.8 }}
+              // whileInView={{ opacity: 1, scale: 1 }}
+              // transition={{ duration: 0.75, delay: 0.5, ease: "easeInOut" }}
+              // viewport={{ once: true }}
+              className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]"
+            >
+              <Deel color="#51407D" />
+              <Zoominfo color="#51407D" />
+              <Salesforce color="#51407D" />
+              <Illumin color="#51407D" />
+            </motion.section>
+          </section>
         </div>
-        <section className="w-full flex flex-col items-center justify-center gap-8 md:gap-6 lg:gap-4 font-secondary">
-          <motion.header
-            initial={{ opacity: 0, translateY: "2px" }}
-            whileInView={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.3, delay: 0.4, ease: "linear" }}
-            viewport={{ once: true }}
-            className="text-3xl text-secondary"
-          >
-            Loved by folks from
-          </motion.header>
-          <motion.section
-            // initial={{ opacity: 0, scale: 0.8 }}
-            // whileInView={{ opacity: 1, scale: 1 }}
-            // transition={{ duration: 0.75, delay: 0.5, ease: "easeInOut" }}
-            // viewport={{ once: true }}
-            className="flex flex-row gap-6 md:gap-8 lg:gap-12 items-center justify-center max-w-[94%]"
-          >
-            <Deel color="#51407D" />
-            <Zoominfo color="#51407D" />
-            <Salesforce color="#51407D" />
-            <Illumin color="#51407D" />
-          </motion.section>
-        </section>
-      </div>
-      <div className="" id="how-it-works">
-        <ScrollSection />
-      </div>
+        <div className="" id="how-it-works">
+          <ScrollSection />
+        </div>
 
-      <Section2 />
-      <div ref={wrapperRef} className="">
-        <Section3 />
+        <Section2 />
+        <div ref={wrapperRef} className="">
+          <Section3 />
+        </div>
+        <div
+          id="faqs"
+          ref={lowerRef}
+          className="relative bg-white pb-4 md:pb-12 lg:pb-24 "
+        >
+          <Section4 />
+        </div>
+        <Section5 />
+        <div id="contact-us" className="max-w-[2700px] mx-auto relative">
+          <Footer />
+        </div>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-1TBCT2BD2G" />
+        <Script src="script.js" />
+        <Script src="wrapScript.js" />
       </div>
-      <div
-        id="faqs"
-        ref={lowerRef}
-        className="relative bg-white pb-4 md:pb-12 lg:pb-24 "
-      >
-        <Section4 />
-      </div>
-      <Section5 />
-      <div id="contact-us" className="max-w-[2700px] mx-auto relative">
-        <Footer />
-      </div>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-1TBCT2BD2G" />
-      <Script src="script.js" />
-      <Script src="wrapScript.js" />
-    </div>
+    </>
   );
 };
 
