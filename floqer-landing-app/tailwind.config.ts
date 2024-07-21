@@ -35,7 +35,9 @@ const config: Config = {
         primary: "#5549D8",
         secondary: "#51407D",
         tertiary: "#E8A496",
-        lightPurple: "#9A7FE1"
+        lightPurple: "#9A7FE1",
+        bgPrimary:"#F7F5FF",
+        bgSelected:"#E9E1FF"
       },
       fontFamily: {
         // primary: "AirbnbCereal, sans-serif !important",

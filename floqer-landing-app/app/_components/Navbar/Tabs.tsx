@@ -5,7 +5,7 @@ import AnimateLoad from "../animations/AnimateLoad";
 
 const list = ["How it works", "Integrations", "FAQs", "Contact us"];
 
-const links = ["#how-it-works", "#integrations", "#faqs", "#contact-us"];
+const links = ["#how-it-works", "/integrations", "#faqs", "#contact-us"];
 
 const Tabs = () => {
   return (
